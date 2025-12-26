@@ -3,6 +3,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { useLanguage } from '@/contexts/LanguageContext';
 import LanguageToggle from './LanguageToggle';
 import { Menu, X } from 'lucide-react';
+import profileLogo from '@/assets/profile-logo.png';
 
 const Navbar = () => {
   const { t, isRTL } = useLanguage();
@@ -44,10 +45,14 @@ const Navbar = () => {
       <div className="container mx-auto px-4 flex items-center justify-between">
         <motion.a
           href="#"
-          className="text-xl font-display font-bold gradient-text"
+          className="flex items-center"
           whileHover={{ scale: 1.05 }}
         >
-          {'<SE />'}
+          <img 
+            src={profileLogo} 
+            alt="Salah Elden" 
+            className="w-10 h-10 rounded-full object-cover border-2 border-primary/50"
+          />
         </motion.a>
 
         {/* Desktop Navigation */}
