@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion';
 import { useLanguage } from '@/contexts/LanguageContext';
 import { Github, Linkedin, Mail } from 'lucide-react';
+import profileLogo from '@/assets/profile-logo.png';
 
 const Footer = () => {
   const { t } = useLanguage();
@@ -13,10 +14,14 @@ const Footer = () => {
           {/* Logo */}
           <motion.a
             href="#"
-            className="text-xl font-display font-bold gradient-text"
+            className="flex items-center"
             whileHover={{ scale: 1.05 }}
           >
-            {'<SE />'}
+            <img 
+              src={profileLogo} 
+              alt="Salah Elden" 
+              className="w-10 h-10 rounded-full object-cover border-2 border-primary/50"
+            />
           </motion.a>
 
           {/* Copyright */}
