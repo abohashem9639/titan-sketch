@@ -20,7 +20,7 @@ const translations = {
     
     // Hero
     'hero.greeting': 'Hello, I\'m',
-    'hero.name': 'Salah Elden',
+    'hero.name': 'Salahuddin',
     'hero.title': 'Software Engineer',
     'hero.subtitle': 'Building Scalable Systems. Solving Complex Problems.',
     'hero.cta.projects': 'View Projects',
@@ -143,8 +143,8 @@ const translations = {
     // Education
     'education.title': 'التعليم',
     'education.degree': 'بكالوريوس في هندسة الحاسوب',
-    'education.university': 'جامعة صقاريا',
-    'education.location': 'صقاريا، تركيا',
+    'education.university': 'جامعة سكاريا',
+    'education.location': 'سكاريا، تركيا',
     'education.period': '2023 - حالياً',
     
     // Contact

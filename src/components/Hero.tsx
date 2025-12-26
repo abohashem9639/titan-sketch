@@ -111,8 +111,8 @@ const Hero = () => {
             className="flex justify-center gap-6"
           >
             {[
-              { icon: Github, href: 'https://github.com' },
-              { icon: Linkedin, href: 'https://linkedin.com' },
+              { icon: Github, href: 'https://github.com/abohashem9639' },
+              { icon: Linkedin, href: 'https://www.linkedin.com/in/salahelden-abo-hashem' },
               { icon: Mail, href: 'mailto:salahelden.abohashem@gmail.com' },
             ].map(({ icon: Icon, href }, index) => (
               <motion.a
