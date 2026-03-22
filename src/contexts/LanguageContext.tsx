@@ -17,21 +17,21 @@ const translations = {
     'nav.projects': 'Projects',
     'nav.education': 'Education',
     'nav.contact': 'Contact',
-    
+
     // Hero
     'hero.greeting': 'Hello, I\'m',
     'hero.name': 'Salahuddin',
-    'hero.title': 'Software Engineer',
+    'hero.title': 'Computer Engineer',
     'hero.subtitle': 'Building Scalable Systems. Solving Complex Problems.',
     'hero.cta.projects': 'View Projects',
     'hero.cta.contact': 'Get in Touch',
-    
+
     // About
     'about.title': 'About Me',
     'about.p1': 'Software Developer with over 2 years of experience in building robust web and mobile applications. Specialized in backend development using ASP.NET Core and native Android development using Kotlin and Jetpack Compose.',
     'about.p2': 'Eager to deepen technical expertise by joining highly experienced teams and contributing effectively to large-scale, challenging projects.',
     'about.p3': 'I focus on writing clean, maintainable code following best practices like Clean Architecture, DDD, and comprehensive testing strategies.',
-    
+
     // Skills
     'skills.title': 'Technical Skills',
     'skills.languages': 'Programming Languages',
@@ -40,47 +40,47 @@ const translations = {
     'skills.mobile': 'Mobile & Frontend',
     'skills.databases': 'Databases',
     'skills.tools': 'Tools & Platforms',
-    
+
     // Projects
     'projects.title': 'Projects',
     'projects.viewCode': 'View Code',
     'projects.viewLive': 'Live Demo',
-    
+
     'projects.talabati.title': 'Talabati',
     'projects.talabati.role': 'Full-Stack Developer',
     'projects.talabati.desc': 'An integrated ordering platform (restaurants, markets, pharmacies) with robust API using Clean Architecture and native Android app with Jetpack Compose.',
-    
+
     'projects.talabatiCompany.title': 'TalabatiCompany',
     'projects.talabatiCompany.role': 'Project Lead',
     'projects.talabatiCompany.desc': 'Control panel for business management with Branch Management, Inventory/Stock Tracking, and Order Processing modules.',
-    
+
     'projects.quick.title': 'Quick',
     'projects.quick.role': 'Full-Stack Developer',
     'projects.quick.desc': 'Restaurant management and order-processing system with user-friendly interface and dedicated admin panels for each restaurant.',
-    
+
     'projects.m79.title': 'M79',
     'projects.m79.role': 'Full-Stack Developer',
     'projects.m79.desc': 'Real-time car auction platform engineered to handle high concurrency with low latency for fair bidding experience.',
-    
+
     'projects.crm.title': 'University CRM',
     'projects.crm.role': 'Backend Developer',
     'projects.crm.desc': 'Custom CRM system for managing student files during private university admissions with advanced workflows.',
-    
+
     'projects.diff.title': 'Diff',
     'projects.diff.role': 'Full-Stack Developer',
     'projects.diff.desc': 'Modern e-commerce platform for trendy clothing. Built with React, Vite, Tailwind CSS, and Shadcn UI. Features Supabase backend, React Query for data fetching, and i18next for multi-language support.',
-    
+
     'projects.ghiras.title': 'Ghiras 26 — Nadi Nawa',
     'projects.ghiras.role': 'Full-Stack Developer',
     'projects.ghiras.desc': 'Ramadan Iftar Management System built with Next.js App Router. Features a responsive UI with Tailwind CSS and full-stack capabilities using PostgreSQL, SQLite, and BcryptJS for secure authentication.',
-    
+
     // Education
     'education.title': 'Education',
     'education.degree': 'B.Sc. in Computer Engineering',
     'education.university': 'Sakarya University',
     'education.location': 'Sakarya, Turkey',
     'education.period': '2023 - Present',
-    
+
     // Contact
     'contact.title': 'Get in Touch',
     'contact.subtitle': 'Let\'s build something amazing together',
@@ -88,7 +88,7 @@ const translations = {
     'contact.phone': 'Phone',
     'contact.location': 'Location',
     'contact.cta': 'Send Message',
-    
+
     // Footer
     'footer.rights': 'All rights reserved.',
   },
@@ -99,21 +99,21 @@ const translations = {
     'nav.projects': 'المشاريع',
     'nav.education': 'التعليم',
     'nav.contact': 'تواصل',
-    
+
     // Hero
     'hero.greeting': 'مرحباً، أنا',
     'hero.name': 'صلاح الدين',
-    'hero.title': 'مهندس برمجيات',
+    'hero.title': 'مهندس حاسوب',
     'hero.subtitle': 'بناء أنظمة قابلة للتوسع. حل المشاكل المعقدة.',
     'hero.cta.projects': 'عرض المشاريع',
     'hero.cta.contact': 'تواصل معي',
-    
+
     // About
     'about.title': 'عني',
     'about.p1': 'مطور برمجيات بخبرة تزيد عن عامين في بناء تطبيقات ويب وموبايل قوية. متخصص في تطوير الباك إند باستخدام ASP.NET Core وتطوير أندرويد الأصلي باستخدام Kotlin و Jetpack Compose.',
     'about.p2': 'حريص على تعميق الخبرة التقنية من خلال الانضمام إلى فرق ذات خبرة عالية والمساهمة بفعالية في مشاريع كبيرة ومعقدة.',
     'about.p3': 'أركز على كتابة كود نظيف وقابل للصيانة باتباع أفضل الممارسات مثل Clean Architecture و DDD واستراتيجيات الاختبار الشاملة.',
-    
+
     // Skills
     'skills.title': 'المهارات التقنية',
     'skills.languages': 'لغات البرمجة',
@@ -122,47 +122,47 @@ const translations = {
     'skills.mobile': 'الموبايل والفرونت إند',
     'skills.databases': 'قواعد البيانات',
     'skills.tools': 'الأدوات والمنصات',
-    
+
     // Projects
     'projects.title': 'المشاريع',
     'projects.viewCode': 'عرض الكود',
     'projects.viewLive': 'عرض مباشر',
-    
+
     'projects.talabati.title': 'طلباتي',
     'projects.talabati.role': 'مطور Full-Stack',
     'projects.talabati.desc': 'منصة طلبات متكاملة (مطاعم، أسواق، صيدليات) مع API قوي باستخدام Clean Architecture وتطبيق أندرويد أصلي مع Jetpack Compose.',
-    
+
     'projects.talabatiCompany.title': 'طلباتي للشركات',
     'projects.talabatiCompany.role': 'قائد المشروع',
     'projects.talabatiCompany.desc': 'لوحة تحكم لإدارة الأعمال مع وحدات إدارة الفروع وتتبع المخزون ومعالجة الطلبات.',
-    
+
     'projects.quick.title': 'Quick',
     'projects.quick.role': 'مطور Full-Stack',
     'projects.quick.desc': 'نظام إدارة المطاعم ومعالجة الطلبات مع واجهة سهلة الاستخدام ولوحات إدارة مخصصة لكل مطعم.',
-    
+
     'projects.m79.title': 'M79',
     'projects.m79.role': 'مطور Full-Stack',
     'projects.m79.desc': 'منصة مزادات سيارات في الوقت الفعلي مصممة للتعامل مع التزامن العالي وزمن استجابة منخفض.',
-    
+
     'projects.crm.title': 'نظام CRM الجامعي',
     'projects.crm.role': 'مطور Backend',
     'projects.crm.desc': 'نظام CRM مخصص لإدارة ملفات الطلاب أثناء القبول الجامعي مع سير عمل متقدم.',
-    
+
     'projects.diff.title': 'Diff',
     'projects.diff.role': 'مطور Full-Stack',
     'projects.diff.desc': 'متجر إلكتروني لبيع الألبسة العصرية. مبني باستخدام React، Vite، Tailwind CSS، و Shadcn UI. يتضمن قاعدة بيانات Supabase، و React Query لجلب البيانات، ودعم تعدد اللغات.',
-    
-    'projects.ghiras.title': 'غراس 26 — نادي نوى',
+
+    'projects.ghiras.title': 'غراس 26 — نادي نواة',
     'projects.ghiras.role': 'مطور Full-Stack',
     'projects.ghiras.desc': 'نظام إدارة إفطار رمضان مبني باستخدام Next.js App Router. يتميز بواجهة متجاوبة مع Tailwind CSS ويدمج بين PostgreSQL و SQLite لإدارة البيانات، مع BcryptJS للمصادقة الآمنة.',
-    
+
     // Education
     'education.title': 'التعليم',
     'education.degree': 'بكالوريوس في هندسة الحاسوب',
     'education.university': 'جامعة سكاريا',
     'education.location': 'سكاريا، تركيا',
     'education.period': '2023 - حالياً',
-    
+
     // Contact
     'contact.title': 'تواصل معي',
     'contact.subtitle': 'دعنا نبني شيئاً رائعاً معاً',
@@ -170,7 +170,7 @@ const translations = {
     'contact.phone': 'الهاتف',
     'contact.location': 'الموقع',
     'contact.cta': 'إرسال رسالة',
-    
+
     // Footer
     'footer.rights': 'جميع الحقوق محفوظة.',
   },
