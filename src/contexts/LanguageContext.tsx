@@ -66,6 +66,14 @@ const translations = {
     'projects.crm.role': 'Backend Developer',
     'projects.crm.desc': 'Custom CRM system for managing student files during private university admissions with advanced workflows.',
     
+    'projects.diff.title': 'Diff',
+    'projects.diff.role': 'Full-Stack Developer',
+    'projects.diff.desc': 'Modern e-commerce platform for trendy clothing. Built with React, Vite, Tailwind CSS, and Shadcn UI. Features Supabase backend, React Query for data fetching, and i18next for multi-language support.',
+    
+    'projects.ghiras.title': 'Ghiras 26 — Nadi Nawa',
+    'projects.ghiras.role': 'Full-Stack Developer',
+    'projects.ghiras.desc': 'Ramadan Iftar Management System built with Next.js App Router. Features a responsive UI with Tailwind CSS and full-stack capabilities using PostgreSQL, SQLite, and BcryptJS for secure authentication.',
+    
     // Education
     'education.title': 'Education',
     'education.degree': 'B.Sc. in Computer Engineering',
@@ -139,6 +147,14 @@ const translations = {
     'projects.crm.title': 'نظام CRM الجامعي',
     'projects.crm.role': 'مطور Backend',
     'projects.crm.desc': 'نظام CRM مخصص لإدارة ملفات الطلاب أثناء القبول الجامعي مع سير عمل متقدم.',
+    
+    'projects.diff.title': 'Diff',
+    'projects.diff.role': 'مطور Full-Stack',
+    'projects.diff.desc': 'متجر إلكتروني لبيع الألبسة العصرية. مبني باستخدام React، Vite، Tailwind CSS، و Shadcn UI. يتضمن قاعدة بيانات Supabase، و React Query لجلب البيانات، ودعم تعدد اللغات.',
+    
+    'projects.ghiras.title': 'غراس 26 — نادي نوى',
+    'projects.ghiras.role': 'مطور Full-Stack',
+    'projects.ghiras.desc': 'نظام إدارة إفطار رمضان مبني باستخدام Next.js App Router. يتميز بواجهة متجاوبة مع Tailwind CSS ويدمج بين PostgreSQL و SQLite لإدارة البيانات، مع BcryptJS للمصادقة الآمنة.',
     
     // Education
     'education.title': 'التعليم',

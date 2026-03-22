@@ -48,6 +48,20 @@ const projects: Project[] = [
     tech: ['ASP.NET Core', 'Workflows', 'Student Management'],
     color: 'from-blue-500/20 to-indigo-500/20',
   },
+  {
+    titleKey: 'projects.diff.title',
+    roleKey: 'projects.diff.role',
+    descKey: 'projects.diff.desc',
+    tech: ['React', 'TypeScript', 'Vite', 'Tailwind CSS', 'Supabase', 'React Query'],
+    color: 'from-violet-500/20 to-fuchsia-500/20',
+  },
+  {
+    titleKey: 'projects.ghiras.title',
+    roleKey: 'projects.ghiras.role',
+    descKey: 'projects.ghiras.desc',
+    tech: ['Next.js', 'TypeScript', 'Tailwind CSS', 'PostgreSQL', 'SQLite', 'BcryptJS'],
+    color: 'from-amber-500/20 to-red-500/20',
+  },
 ];
 
 const Projects = () => {
