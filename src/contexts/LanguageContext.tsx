@@ -17,6 +17,7 @@ const translations = {
     'nav.projects': 'Projects',
     'nav.experience': 'Experience',
     'nav.education': 'Education',
+    'nav.additional': 'More',
     'nav.contact': 'Contact',
 
     // Hero
@@ -98,7 +99,22 @@ const translations = {
     'education.degree': 'B.Sc. in Computer Engineering',
     'education.university': 'Sakarya University',
     'education.location': 'Sakarya, Turkey',
-    'education.period': '2023 - Present',
+    'education.period': '2023 - 2027',
+
+    // Additional (Languages & Soft Skills)
+    'additional.title': 'Languages & Soft Skills',
+    'additional.languages': 'Languages',
+    'additional.softSkills': 'Soft Skills',
+    'additional.lang.arabic': 'Arabic',
+    'additional.lang.turkish': 'Turkish',
+    'additional.lang.english': 'English',
+    'additional.lang.native': 'Native',
+    'additional.lang.fluent': 'Fluent',
+    'additional.lang.intermediate': 'Intermediate',
+    'additional.soft.problemSolving': 'Problem Solving',
+    'additional.soft.adaptability': 'Adaptability',
+    'additional.soft.fastLearner': 'Fast Learner',
+    'additional.soft.communication': 'Effective Communication',
 
     // Contact
     'contact.title': 'Get in Touch',
@@ -118,6 +134,7 @@ const translations = {
     'nav.projects': 'المشاريع',
     'nav.experience': 'الخبرة',
     'nav.education': 'التعليم',
+    'nav.additional': 'المزيد',
     'nav.contact': 'تواصل',
 
     // Hero
@@ -199,7 +216,22 @@ const translations = {
     'education.degree': 'بكالوريوس في هندسة الحاسوب',
     'education.university': 'جامعة سكاريا',
     'education.location': 'سكاريا، تركيا',
-    'education.period': '2023 - حالياً',
+    'education.period': '2023 - 2027',
+
+    // Additional (Languages & Soft Skills)
+    'additional.title': 'اللغات والمهارات الشخصية',
+    'additional.languages': 'اللغات',
+    'additional.softSkills': 'المهارات الشخصية',
+    'additional.lang.arabic': 'العربية',
+    'additional.lang.turkish': 'التركية',
+    'additional.lang.english': 'الإنجليزية',
+    'additional.lang.native': 'لغة أم',
+    'additional.lang.fluent': 'بطلاقة',
+    'additional.lang.intermediate': 'متوسط',
+    'additional.soft.problemSolving': 'حل المشكلات',
+    'additional.soft.adaptability': 'القدرة على التكيف',
+    'additional.soft.fastLearner': 'سرعة التعلم',
+    'additional.soft.communication': 'التواصل الفعّال',
 
     // Contact
     'contact.title': 'تواصل معي',

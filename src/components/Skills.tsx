@@ -15,11 +15,11 @@ const skillCategories: SkillCategory[] = [
   },
   {
     titleKey: 'skills.backend',
-    skills: ['ASP.NET Core', '.NET 6/8', 'Entity Framework Core', 'RESTful APIs', 'JWT Auth', 'RBAC', 'Redis', 'Queue Workers'],
+    skills: ['ASP.NET Core', '.NET 6/8/10', 'Entity Framework Core', 'RESTful APIs', 'JWT Auth', 'Centralized Error Handling', 'RBAC', 'Multi-level Permissions', 'Redis', 'RabbitMQ', 'Queue Workers', 'Background Jobs', 'Elasticsearch', 'Meilisearch'],
   },
   {
     titleKey: 'skills.architecture',
-    skills: ['Clean Architecture', 'DDD', 'Microservices', 'N-Tier', 'Repository Pattern', 'Unit of Work', 'MVI', 'Unit Testing'],
+    skills: ['Clean Architecture', 'DDD', 'Microservices', 'N-Tier', 'Repository Pattern', 'Unit of Work', 'MVI', 'Unit Testing', 'Feature Testing'],
   },
   {
     titleKey: 'skills.mobile',
@@ -27,11 +27,11 @@ const skillCategories: SkillCategory[] = [
   },
   {
     titleKey: 'skills.databases',
-    skills: ['PostgreSQL', 'MySQL', 'Redis', 'Complex Schema Design'],
+    skills: ['PostgreSQL', 'PostGIS', 'MySQL', 'Redis', 'Complex Schema Design'],
   },
   {
     titleKey: 'skills.tools',
-    skills: ['Docker', 'Git', 'GitHub Actions', 'Jira', 'Postman', 'Figma', 'VS Code'],
+    skills: ['Docker', 'Git', 'GitHub Actions', 'Jira', 'Postman', 'Figma', 'Visual Studio', 'VS Code'],
   },
 ];
 

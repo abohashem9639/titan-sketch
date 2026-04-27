@@ -24,6 +24,7 @@ const Navbar = () => {
     { href: '#experience', label: t('nav.experience') },
     { href: '#projects', label: t('nav.projects') },
     { href: '#education', label: t('nav.education') },
+    { href: '#additional', label: t('nav.additional') },
     { href: '#contact', label: t('nav.contact') },
   ];
 
