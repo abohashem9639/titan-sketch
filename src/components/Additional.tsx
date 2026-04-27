@@ -11,7 +11,7 @@ const Additional = () => {
 
   const languages = [
     { nameKey: 'additional.lang.arabic', levelKey: 'additional.lang.native', percent: 100 },
-    { nameKey: 'additional.lang.turkish', levelKey: 'additional.lang.fluent', percent: 90 },
+    { nameKey: 'additional.lang.turkish', levelKey: 'additional.lang.fluent', percent: 100 },
     { nameKey: 'additional.lang.english', levelKey: 'additional.lang.intermediate', percent: 65 },
   ];
 
