@@ -62,6 +62,13 @@ const projects: Project[] = [
     tech: ['Next.js', 'TypeScript', 'Tailwind CSS', 'PostgreSQL', 'SQLite', 'BcryptJS'],
     color: 'from-amber-500/20 to-red-500/20',
   },
+  {
+    titleKey: 'projects.omega.title',
+    roleKey: 'projects.omega.role',
+    descKey: 'projects.omega.desc',
+    tech: ['PHP', 'JavaScript', 'Bootstrap', 'HTML/CSS', 'Auto-Grading', 'TR-YÖS Style Exams'],
+    color: 'from-rose-500/20 to-fuchsia-500/20',
+  },
 ];
 
 const Projects = () => {

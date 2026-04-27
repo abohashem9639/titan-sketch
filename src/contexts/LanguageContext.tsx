@@ -15,6 +15,7 @@ const translations = {
     'nav.about': 'About',
     'nav.skills': 'Skills',
     'nav.projects': 'Projects',
+    'nav.experience': 'Experience',
     'nav.education': 'Education',
     'nav.contact': 'Contact',
 
@@ -74,6 +75,24 @@ const translations = {
     'projects.ghiras.role': 'Full-Stack Developer',
     'projects.ghiras.desc': 'Ramadan Iftar Management System built with Next.js App Router. Features a responsive UI with Tailwind CSS and full-stack capabilities using PostgreSQL, SQLite, and BcryptJS for secure authentication.',
 
+    'projects.omega.title': 'Omega Education',
+    'projects.omega.role': 'Full-Stack Developer',
+    'projects.omega.desc': 'Comprehensive e-learning platform featuring recorded courses, job listings, downloadable worksheets, and a professional online examination system that mirrors the TR-YÖS test experience, backed by an advanced automated grading and evaluation engine.',
+
+    // Experience
+    'experience.title': 'Experience',
+    'experience.talabati.company': 'Talabati',
+    'experience.talabati.role': 'Mobile / Backend Developer',
+    'experience.talabati.period': 'May 2025 – January 2026',
+    'experience.talabati.point1': 'Developed the mobile application front-end using Kotlin and Jetpack Compose.',
+    'experience.talabati.point2': 'Built and maintained the user-facing back-end API using ASP.NET Core (.NET 8).',
+    'experience.talabati.point3': 'Engineered the back-end infrastructure for both the Admin and Company control panels, focusing on institutional management systems for branches and orders.',
+    'experience.omega.company': 'Omega Education',
+    'experience.omega.role': 'Full Stack Developer',
+    'experience.omega.period': 'July 2024 – April 2025',
+    'experience.omega.point1': 'Developed an integrated platform for hosting recorded courses and conducting online examinations.',
+    'experience.omega.point2': 'Implemented an automated scoring and evaluation system to streamline the online testing process.',
+
     // Education
     'education.title': 'Education',
     'education.degree': 'B.Sc. in Computer Engineering',
@@ -97,6 +116,7 @@ const translations = {
     'nav.about': 'عني',
     'nav.skills': 'المهارات',
     'nav.projects': 'المشاريع',
+    'nav.experience': 'الخبرة',
     'nav.education': 'التعليم',
     'nav.contact': 'تواصل',
 
@@ -155,6 +175,24 @@ const translations = {
     'projects.ghiras.title': 'غراس 26 — نادي نواة',
     'projects.ghiras.role': 'مطور Full-Stack',
     'projects.ghiras.desc': 'نظام إدارة إفطار رمضان مبني باستخدام Next.js App Router. يتميز بواجهة متجاوبة مع Tailwind CSS ويدمج بين PostgreSQL و SQLite لإدارة البيانات، مع BcryptJS للمصادقة الآمنة.',
+
+    'projects.omega.title': 'Omega Education',
+    'projects.omega.role': 'مطور Full-Stack',
+    'projects.omega.desc': 'منصة تعليمية متكاملة تشمل الدورات المسجلة وقسم الوظائف وأوراق العمل، مع نظام تقديم امتحانات إلكتروني احترافي يحاكي تجربة امتحانات TR-YÖS، مدعوم بمحرك تصحيح وتقييم آلي متقدم.',
+
+    // Experience
+    'experience.title': 'الخبرة العملية',
+    'experience.talabati.company': 'طلباتي',
+    'experience.talabati.role': 'مطور موبايل / باك إند',
+    'experience.talabati.period': 'مايو 2025 – يناير 2026',
+    'experience.talabati.point1': 'تطوير واجهة تطبيق الموبايل باستخدام Kotlin و Jetpack Compose.',
+    'experience.talabati.point2': 'بناء وصيانة الـ API الخاص بالمستخدمين باستخدام ASP.NET Core (.NET 8).',
+    'experience.talabati.point3': 'هندسة البنية التحتية للباك إند للوحتي تحكم الإدارة والشركات، مع التركيز على أنظمة الإدارة المؤسسية للفروع والطلبات.',
+    'experience.omega.company': 'Omega Education',
+    'experience.omega.role': 'مطور Full Stack',
+    'experience.omega.period': 'يوليو 2024 – أبريل 2025',
+    'experience.omega.point1': 'تطوير منصة متكاملة لاستضافة الدورات المسجلة وإجراء الامتحانات عبر الإنترنت.',
+    'experience.omega.point2': 'تنفيذ نظام تقييم وتصحيح آلي لتبسيط عملية الاختبارات الإلكترونية.',
 
     // Education
     'education.title': 'التعليم',
