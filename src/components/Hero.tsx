@@ -62,7 +62,7 @@ const Hero = () => {
   return (
     <section
       ref={sectionRef}
-      className="min-h-screen relative flex items-center justify-center overflow-hidden"
+      className="min-h-screen relative flex items-center justify-center overflow-hidden pt-28 pb-20 md:pt-24 md:pb-16"
     >
       {/* Layered Background */}
       <div className="absolute inset-0 hero-gradient" />
