@@ -31,7 +31,7 @@ const skillCategories: SkillCategory[] = [
   },
   {
     titleKey: 'skills.tools',
-    skills: ['Docker', 'Git', 'GitHub Actions', 'Jira', 'Postman', 'Figma', 'Visual Studio', 'VS Code'],
+    skills: ['AWS', 'MinIO', 'Docker', 'Git', 'GitHub Actions', 'Jira', 'Postman', 'Figma', 'Visual Studio', 'VS Code'],
   },
 ];
 
