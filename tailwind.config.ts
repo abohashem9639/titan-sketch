@@ -100,6 +100,10 @@ export default {
           "0%": { width: "0%" },
           "100%": { width: "100%" },
         },
+        "shimmer": {
+          "0%": { backgroundPosition: "200% 0" },
+          "100%": { backgroundPosition: "-200% 0" },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
@@ -110,6 +114,7 @@ export default {
         "float": "float 6s ease-in-out infinite",
         "slide-in-right": "slide-in-right 0.5s ease-out",
         "line-grow": "line-grow 1s ease-out forwards",
+        "shimmer": "shimmer 4s linear infinite",
       },
     },
   },

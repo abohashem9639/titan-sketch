@@ -27,6 +27,14 @@ const translations = {
     'hero.subtitle': 'Building Scalable Systems. Solving Complex Problems.',
     'hero.cta.projects': 'View Projects',
     'hero.cta.contact': 'Get in Touch',
+    'hero.status': 'Available for opportunities',
+    'hero.role.1': 'Backend Developer',
+    'hero.role.2': 'Mobile Developer',
+    'hero.role.3': 'Full-Stack Engineer',
+    'hero.role.4': 'System Architect',
+    'hero.stat.experience': 'Years of Experience',
+    'hero.stat.projects': 'Projects Shipped',
+    'hero.stat.stack': 'Tech Stack',
 
     // About
     'about.title': 'About Me',
@@ -148,6 +156,14 @@ const translations = {
     'hero.subtitle': 'بناء أنظمة قابلة للتوسع. حل المشاكل المعقدة.',
     'hero.cta.projects': 'عرض المشاريع',
     'hero.cta.contact': 'تواصل معي',
+    'hero.status': 'متاح لفرص جديدة',
+    'hero.role.1': 'مطور Backend',
+    'hero.role.2': 'مطور Mobile',
+    'hero.role.3': 'مهندس Full-Stack',
+    'hero.role.4': 'مهندس أنظمة',
+    'hero.stat.experience': 'سنوات الخبرة',
+    'hero.stat.projects': 'المشاريع المنجزة',
+    'hero.stat.stack': 'الستاك التقني',
 
     // About
     'about.title': 'عني',
