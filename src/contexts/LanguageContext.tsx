@@ -80,6 +80,10 @@ const translations = {
     'projects.omega.role': 'Full-Stack Developer',
     'projects.omega.desc': 'Comprehensive e-learning platform featuring recorded courses, job listings, downloadable worksheets, and a professional online examination system that mirrors the TR-YÖS test experience, backed by an advanced automated grading and evaluation engine.',
 
+    'projects.mkcl.title': 'MKCL — Majaz Al Khalig',
+    'projects.mkcl.role': 'Backend Developer',
+    'projects.mkcl.desc': 'Tailored CRM system built for an engineering consulting firm (MKCL — Majaz Al Khalig Co. Ltd.). Centralizes employee management, client relationship management, and incoming-report tracking under a single secure RESTful API.',
+
     // Experience
     'experience.title': 'Experience',
     'experience.talabati.company': 'Talabati',
@@ -196,6 +200,10 @@ const translations = {
     'projects.omega.title': 'Omega Education',
     'projects.omega.role': 'مطور Full-Stack',
     'projects.omega.desc': 'منصة تعليمية متكاملة تشمل الدورات المسجلة وقسم الوظائف وأوراق العمل، مع نظام تقديم امتحانات إلكتروني احترافي يحاكي تجربة امتحانات TR-YÖS، مدعوم بمحرك تصحيح وتقييم آلي متقدم.',
+
+    'projects.mkcl.title': 'MKCL — مجاز الخليج',
+    'projects.mkcl.role': 'مطور Backend',
+    'projects.mkcl.desc': 'نظام CRM مخصّص لإدارة شركة استشارات هندسية (MKCL — مجاز الخليج المحدودة). يوفّر إدارة موحّدة للموظفين والعملاء وتتبّع التقارير الواردة عبر API خلفي آمن باستخدام ASP.NET Core و .NET 8.',
 
     // Experience
     'experience.title': 'الخبرة العملية',

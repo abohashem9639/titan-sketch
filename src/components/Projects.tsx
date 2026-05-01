@@ -69,6 +69,13 @@ const projects: Project[] = [
     tech: ['PHP', 'JavaScript', 'Bootstrap', 'HTML/CSS', 'Auto-Grading', 'TR-YÖS Style Exams'],
     color: 'from-rose-500/20 to-fuchsia-500/20',
   },
+  {
+    titleKey: 'projects.mkcl.title',
+    roleKey: 'projects.mkcl.role',
+    descKey: 'projects.mkcl.desc',
+    tech: ['ASP.NET Core', '.NET 8', 'Web API', 'Employee Management', 'Client Management', 'Reports'],
+    color: 'from-teal-500/20 to-emerald-500/20',
+  },
 ];
 
 const Projects = () => {
