@@ -1,7 +1,10 @@
-import { useEffect, useRef, useState } from 'react';
+import { lazy, Suspense, useEffect, useRef, useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useLanguage } from '@/contexts/LanguageContext';
 import { ArrowDown, Github, Linkedin, Mail, Sparkles, Code2, Rocket } from 'lucide-react';
+
+// Lazy-load the heavy 3D scene so initial bundle stays small
+const Hero3DScene = lazy(() => import('./Hero3DScene'));
 
 const Hero = () => {
   const { t } = useLanguage();
@@ -67,6 +70,16 @@ const Hero = () => {
       {/* Layered Background */}
       <div className="absolute inset-0 hero-gradient" />
       <div className="absolute inset-0 grid-pattern opacity-20" />
+
+      {/* 3D Scene Background */}
+      <div className="absolute inset-0 pointer-events-none opacity-70">
+        <Suspense fallback={null}>
+          <Hero3DScene />
+        </Suspense>
+      </div>
+
+      {/* Vignette to keep text readable over the 3D scene */}
+      <div className="absolute inset-0 bg-gradient-to-b from-background/70 via-background/30 to-background/80 pointer-events-none" />
 
       {/* Mouse-tracking spotlight */}
       <div
