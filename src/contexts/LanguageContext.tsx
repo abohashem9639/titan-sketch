@@ -92,6 +92,10 @@ const translations = {
     'projects.mkcl.role': 'Backend Developer',
     'projects.mkcl.desc': 'Tailored CRM system built for an engineering consulting firm (MKCL — Majaz Al Khalig Co. Ltd.). Centralizes employee management, client relationship management, and incoming-report tracking under a single secure RESTful API.',
 
+    'projects.notepad.title': 'Notepad',
+    'projects.notepad.role': 'Full-Stack Developer',
+    'projects.notepad.desc': 'Real-time collaborative note-taking SaaS where any URL becomes a shareable note (e.g., /tarik). Features password-protected notes with email-based recovery, multi-font editor, dark mode that follows system preference, and live collaboration powered by SignalR.',
+
     // Experience
     'experience.title': 'Experience',
     'experience.talabati.company': 'Talabati',
@@ -220,6 +224,10 @@ const translations = {
     'projects.mkcl.title': 'MKCL — مجاز الخليج',
     'projects.mkcl.role': 'مطور Backend',
     'projects.mkcl.desc': 'نظام CRM مخصّص لإدارة شركة استشارات هندسية (MKCL — مجاز الخليج المحدودة). يوفّر إدارة موحّدة للموظفين والعملاء وتتبّع التقارير الواردة عبر API خلفي آمن باستخدام ASP.NET Core و .NET 8.',
+
+    'projects.notepad.title': 'Notepad',
+    'projects.notepad.role': 'مطور Full-Stack',
+    'projects.notepad.desc': 'منصة SaaS لتدوين الملاحظات بشكل تشاركي في الوقت الفعلي، حيث يتحوّل أي رابط (مثل /tarik) إلى ملاحظة قابلة للمشاركة. تتضمّن ملاحظات محميّة بكلمة مرور مع استعادة عبر البريد الإلكتروني، محرّر متعدّد الخطوط، وضع داكن يتبع إعدادات النظام، وتعاون مباشر مدعوم بـ SignalR.',
 
     // Experience
     'experience.title': 'الخبرة العملية',

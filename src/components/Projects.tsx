@@ -76,6 +76,13 @@ const projects: Project[] = [
     tech: ['ASP.NET Core', '.NET 8', 'Web API', 'Employee Management', 'Client Management', 'Reports'],
     color: 'from-teal-500/20 to-emerald-500/20',
   },
+  {
+    titleKey: 'projects.notepad.title',
+    roleKey: 'projects.notepad.role',
+    descKey: 'projects.notepad.desc',
+    tech: ['ASP.NET Core', 'Clean Architecture', 'PostgreSQL', 'React', 'TypeScript', 'SignalR', 'Tailwind CSS', 'JWT Auth'],
+    color: 'from-sky-500/20 to-indigo-500/20',
+  },
 ];
 
 const Projects = () => {
