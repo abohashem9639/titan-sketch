@@ -10,6 +10,8 @@ interface Project {
   descKey: string;
   tech: string[];
   color: string;
+  github?: string;
+  liveUrl?: string;
 }
 
 const projects: Project[] = [
@@ -83,6 +85,15 @@ const projects: Project[] = [
     tech: ['ASP.NET Core', 'Clean Architecture', 'PostgreSQL', 'React', 'TypeScript', 'SignalR', 'Tailwind CSS', 'JWT Auth'],
     color: 'from-sky-500/20 to-indigo-500/20',
   },
+  {
+    titleKey: 'projects.findmydevice.title',
+    roleKey: 'projects.findmydevice.role',
+    descKey: 'projects.findmydevice.desc',
+    tech: ['.NET 10', 'Clean Architecture', 'Kotlin', 'Jetpack Compose', 'Next.js 16', 'Leaflet'],
+    color: 'from-lime-500/20 to-emerald-500/20',
+    github: 'https://github.com/abohashem9639/findmydevice-',
+    liveUrl: 'https://abohashem9639-findmydevice.vercel.app',
+  },
 ];
 
 const Projects = () => {
@@ -128,22 +139,36 @@ const Projects = () => {
                   <div className="p-3 rounded-lg bg-primary/10 text-primary">
                     <Layers size={24} />
                   </div>
-                  <div className="flex gap-2">
-                    <motion.button
-                      whileHover={{ scale: 1.1 }}
-                      whileTap={{ scale: 0.95 }}
-                      className="p-2 rounded-lg bg-secondary/50 text-muted-foreground hover:text-primary hover:bg-secondary transition-colors"
-                    >
-                      <Github size={18} />
-                    </motion.button>
-                    <motion.button
-                      whileHover={{ scale: 1.1 }}
-                      whileTap={{ scale: 0.95 }}
-                      className="p-2 rounded-lg bg-secondary/50 text-muted-foreground hover:text-primary hover:bg-secondary transition-colors"
-                    >
-                      <ExternalLink size={18} />
-                    </motion.button>
-                  </div>
+                  {(project.github || project.liveUrl) && (
+                    <div className="flex gap-2">
+                      {project.github && (
+                        <motion.a
+                          href={project.github}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          aria-label="View source on GitHub"
+                          whileHover={{ scale: 1.1 }}
+                          whileTap={{ scale: 0.95 }}
+                          className="p-2 rounded-lg bg-secondary/50 text-muted-foreground hover:text-primary hover:bg-secondary transition-colors"
+                        >
+                          <Github size={18} />
+                        </motion.a>
+                      )}
+                      {project.liveUrl && (
+                        <motion.a
+                          href={project.liveUrl}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          aria-label="Open live demo"
+                          whileHover={{ scale: 1.1 }}
+                          whileTap={{ scale: 0.95 }}
+                          className="p-2 rounded-lg bg-secondary/50 text-muted-foreground hover:text-primary hover:bg-secondary transition-colors"
+                        >
+                          <ExternalLink size={18} />
+                        </motion.a>
+                      )}
+                    </div>
+                  )}
                 </div>
 
                 {/* Content */}

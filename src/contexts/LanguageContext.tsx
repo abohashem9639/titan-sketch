@@ -96,6 +96,10 @@ const translations = {
     'projects.notepad.role': 'Full-Stack Developer',
     'projects.notepad.desc': 'Real-time collaborative note-taking SaaS where any URL becomes a shareable note (e.g., /abohashem). Features password-protected notes with email-based recovery, multi-font editor, dark mode that follows system preference, and live collaboration powered by SignalR.',
 
+    'projects.findmydevice.title': 'FindMyDevice — Smart Anti-Theft',
+    'projects.findmydevice.role': 'Full-Stack Developer',
+    'projects.findmydevice.desc': 'Never lose your phone again. Real-time location tracking with battery and network status, plus instant anti-theft alerts the moment your device\'s GPS is disabled — all from a clean web dashboard.',
+
     // Experience
     'experience.title': 'Experience',
     'experience.talabati.company': 'Talabati',
@@ -228,6 +232,10 @@ const translations = {
     'projects.notepad.title': 'Notepad',
     'projects.notepad.role': 'مطور Full-Stack',
     'projects.notepad.desc': 'منصة SaaS لتدوين الملاحظات بشكل تشاركي في الوقت الفعلي، حيث يتحوّل أي رابط (مثل /abohashem) إلى ملاحظة قابلة للمشاركة. تتضمّن ملاحظات محميّة بكلمة مرور مع استعادة عبر البريد الإلكتروني، محرّر متعدّد الخطوط، وضع داكن يتبع إعدادات النظام، وتعاون مباشر مدعوم بـ SignalR.',
+
+    'projects.findmydevice.title': 'FindMyDevice — حماية ذكية من السرقة',
+    'projects.findmydevice.role': 'مطور Full-Stack',
+    'projects.findmydevice.desc': 'لا تفقد هاتفك مرة أخرى. تتبّع موقع لحظي مع حالة البطارية والشبكة، بالإضافة إلى تنبيهات فورية ضد السرقة في اللحظة التي يُعطَّل فيها الـ GPS — كل ذلك من لوحة تحكم ويب أنيقة.',
 
     // Experience
     'experience.title': 'الخبرة العملية',
