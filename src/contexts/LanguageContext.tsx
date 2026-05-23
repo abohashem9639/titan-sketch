@@ -100,6 +100,10 @@ const translations = {
     'projects.findmydevice.role': 'Full-Stack Developer',
     'projects.findmydevice.desc': 'Never lose your phone again. Real-time location tracking with battery and network status, plus instant anti-theft alerts the moment your device\'s GPS is disabled — all from a clean web dashboard.',
 
+    'projects.radiokeep.title': 'RadioKeep',
+    'projects.radiokeep.role': 'Full-Stack Developer',
+    'projects.radiokeep.desc': 'Enterprise-grade SaaS platform for managing and streaming radio stations. Users can browse default stations, add custom ones, mark favorites, reorder via drag-and-drop, and customize themes and language. Built as a clean-architecture monorepo with a secure JWT auth flow and a real-time audio player.',
+
     // Experience
     'experience.title': 'Experience',
     'experience.talabati.company': 'Talabati',
@@ -236,6 +240,10 @@ const translations = {
     'projects.findmydevice.title': 'FindMyDevice — حماية ذكية من السرقة',
     'projects.findmydevice.role': 'مطور Full-Stack',
     'projects.findmydevice.desc': 'لا تفقد هاتفك مرة أخرى. تتبّع موقع لحظي مع حالة البطارية والشبكة، بالإضافة إلى تنبيهات فورية ضد السرقة في اللحظة التي يُعطَّل فيها الـ GPS — كل ذلك من لوحة تحكم ويب أنيقة.',
+
+    'projects.radiokeep.title': 'RadioKeep',
+    'projects.radiokeep.role': 'مطور Full-Stack',
+    'projects.radiokeep.desc': 'منصة SaaS لإدارة وتشغيل محطات الراديو بمعمارية مؤسسية. تتيح للمستخدم تصفح المحطات الافتراضية، إضافة محطات مخصصة، تحديد المفضلة، إعادة ترتيبها بالسحب والإفلات، وتخصيص السمات واللغة. مبنية كـ monorepo بـ Clean Architecture ونظام مصادقة JWT آمن مع مشغل صوت تفاعلي.',
 
     // Experience
     'experience.title': 'الخبرة العملية',

@@ -92,6 +92,13 @@ const projects: Project[] = [
     tech: ['.NET 10', 'Clean Architecture', 'Kotlin', 'Jetpack Compose', 'Next.js 16', 'Leaflet'],
     color: 'from-lime-500/20 to-emerald-500/20',
   },
+  {
+    titleKey: 'projects.radiokeep.title',
+    roleKey: 'projects.radiokeep.role',
+    descKey: 'projects.radiokeep.desc',
+    tech: ['.NET 10', 'ASP.NET Core', 'Clean Architecture', 'EF Core', 'PostgreSQL', 'JWT Auth', 'React', 'TypeScript', 'Vite', 'Tailwind CSS', 'shadcn/ui', 'TanStack Query', 'i18next'],
+    color: 'from-pink-500/20 to-rose-500/20',
+  },
 ];
 
 const Projects = () => {
