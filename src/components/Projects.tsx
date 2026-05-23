@@ -91,8 +91,6 @@ const projects: Project[] = [
     descKey: 'projects.findmydevice.desc',
     tech: ['.NET 10', 'Clean Architecture', 'Kotlin', 'Jetpack Compose', 'Next.js 16', 'Leaflet'],
     color: 'from-lime-500/20 to-emerald-500/20',
-    github: 'https://github.com/abohashem9639/findmydevice-',
-    liveUrl: 'https://abohashem9639-findmydevice.vercel.app',
   },
 ];
 
