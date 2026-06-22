@@ -99,6 +99,20 @@ const projects: Project[] = [
     tech: ['.NET 10', 'ASP.NET Core', 'Clean Architecture', 'EF Core', 'PostgreSQL', 'JWT Auth', 'React', 'TypeScript', 'Vite', 'Tailwind CSS', 'shadcn/ui', 'TanStack Query', 'i18next'],
     color: 'from-pink-500/20 to-rose-500/20',
   },
+  {
+    titleKey: 'projects.sabisgpa.title',
+    roleKey: 'projects.sabisgpa.role',
+    descKey: 'projects.sabisgpa.desc',
+    tech: ['React', 'TypeScript', 'Vite', 'Tailwind CSS', 'Supabase', 'PDF.js', 'TanStack Query'],
+    color: 'from-indigo-500/20 to-purple-500/20',
+  },
+  {
+    titleKey: 'projects.sabisext.title',
+    roleKey: 'projects.sabisext.role',
+    descKey: 'projects.sabisext.desc',
+    tech: ['Chrome Extension', 'Manifest V3', 'TypeScript', 'React', 'Tailwind CSS', 'Content Scripts', 'DOM Injection'],
+    color: 'from-yellow-500/20 to-orange-500/20',
+  },
 ];
 
 const Projects = () => {

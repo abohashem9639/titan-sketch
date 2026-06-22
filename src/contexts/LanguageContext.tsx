@@ -104,6 +104,14 @@ const translations = {
     'projects.radiokeep.role': 'Full-Stack Developer',
     'projects.radiokeep.desc': 'Enterprise-grade SaaS platform for managing and streaming radio stations. Users can browse default stations, add custom ones, mark favorites, reorder via drag-and-drop, and customize themes and language. Built as a clean-architecture monorepo with a secure JWT auth flow and a real-time audio player.',
 
+    'projects.sabisgpa.title': 'SABİS GPA & Transkript Hesaplayıcı',
+    'projects.sabisgpa.role': 'Full-Stack Developer',
+    'projects.sabisgpa.desc': 'A web application for Sakarya University students to calculate and simulate their GPA. Features a manual course calculator with PDF transcript auto-import, a full transcript simulator showing all 8 semesters with editable grades and AKTS credits, and cloud sync via Supabase so data persists across devices after login.',
+
+    'projects.sabisext.title': 'SABİS GPA Simülatörü — Chrome Extension',
+    'projects.sabisext.role': 'Browser Extension Developer',
+    'projects.sabisext.desc': 'A Chrome extension that injects a floating GPA simulator panel directly into the SABİS student portal. It reads the student\'s existing grades from the page, lets them simulate grade changes per course and semester in real time, and shows the impact on both semester and cumulative GPA instantly — without leaving the portal.',
+
     // Experience
     'experience.title': 'Experience',
     'experience.talabati.company': 'Talabati',
@@ -244,6 +252,14 @@ const translations = {
     'projects.radiokeep.title': 'RadioKeep',
     'projects.radiokeep.role': 'مطور Full-Stack',
     'projects.radiokeep.desc': 'منصة SaaS لإدارة وتشغيل محطات الراديو بمعمارية مؤسسية. تتيح للمستخدم تصفح المحطات الافتراضية، إضافة محطات مخصصة، تحديد المفضلة، إعادة ترتيبها بالسحب والإفلات، وتخصيص السمات واللغة. مبنية كـ monorepo بـ Clean Architecture ونظام مصادقة JWT آمن مع مشغل صوت تفاعلي.',
+
+    'projects.sabisgpa.title': 'SABİS — حاسبة GPA وكشف الدرجات',
+    'projects.sabisgpa.role': 'مطور Full-Stack',
+    'projects.sabisgpa.desc': 'تطبيق ويب لطلاب جامعة سكاريا لحساب ومحاكاة المعدل التراكمي (GPA). يضمّ حاسبة مواد يدوية مع استيراد آلي لكشف الدرجات من ملف PDF، ومحاكي كشف كامل يعرض الفصول الثمانية بإمكانية تعديل الدرجات وساعات AKTS، ومزامنة سحابية عبر Supabase تحفظ البيانات عبر الأجهزة بعد تسجيل الدخول.',
+
+    'projects.sabisext.title': 'SABİS GPA Simülatörü — إضافة Chrome',
+    'projects.sabisext.role': 'مطور إضافات متصفح',
+    'projects.sabisext.desc': 'إضافة لمتصفح Chrome تُدرج لوحة محاكاة GPA عائمة داخل بوابة طلاب SABİS مباشرةً. تقرأ الدرجات الموجودة من الصفحة، وتتيح محاكاة تغييرات الدرجات لكل مادة وفصل في الوقت الفعلي، وتُظهر الأثر على معدل الفصل والمعدل التراكمي فوراً — دون مغادرة البوابة.',
 
     // Experience
     'experience.title': 'الخبرة العملية',
