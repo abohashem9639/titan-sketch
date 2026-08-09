@@ -4,6 +4,7 @@ import { useRef } from 'react';
 import { useLanguage } from '@/contexts/LanguageContext';
 import { Briefcase, Calendar } from 'lucide-react';
 import alifbeeLogo from '@/assets/alifbee-logo.png';
+import omegaLogo from '@/assets/omega-logo.png';
 
 const Experience = () => {
   const { t } = useLanguage();
@@ -37,6 +38,7 @@ const Experience = () => {
       company: t('experience.omega.company'),
       role: t('experience.omega.role'),
       period: t('experience.omega.period'),
+      logo: omegaLogo,
       points: [
         t('experience.omega.point1'),
         t('experience.omega.point2'),
