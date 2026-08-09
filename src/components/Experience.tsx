@@ -11,6 +11,17 @@ const Experience = () => {
 
   const experiences = [
     {
+      company: t('experience.alifbee.company'),
+      role: t('experience.alifbee.role'),
+      period: t('experience.alifbee.period'),
+      points: [
+        t('experience.alifbee.point1'),
+        t('experience.alifbee.point2'),
+        t('experience.alifbee.point3'),
+        t('experience.alifbee.point4'),
+      ],
+    },
+    {
       company: t('experience.talabati.company'),
       role: t('experience.talabati.role'),
       period: t('experience.talabati.period'),

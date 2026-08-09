@@ -113,6 +113,13 @@ const projects: Project[] = [
     tech: ['Chrome Extension', 'Manifest V3', 'TypeScript', 'React', 'Tailwind CSS', 'Content Scripts', 'DOM Injection'],
     color: 'from-yellow-500/20 to-orange-500/20',
   },
+  {
+    titleKey: 'projects.alifbeekids.title',
+    roleKey: 'projects.alifbeekids.role',
+    descKey: 'projects.alifbeekids.desc',
+    tech: ['Kotlin', 'Jetpack Compose', 'MVI', 'Hilt', 'Room', 'Retrofit', 'Clean Architecture', 'XML'],
+    color: 'from-red-500/20 to-orange-500/20',
+  },
 ];
 
 const Projects = () => {

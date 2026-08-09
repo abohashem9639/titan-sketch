@@ -11,7 +11,7 @@ interface SkillCategory {
 const skillCategories: SkillCategory[] = [
   {
     titleKey: 'skills.languages',
-    skills: ['C# (.NET)', 'SQL', 'PHP', 'C++', 'C', 'Kotlin', 'JavaScript', 'HTML5', 'CSS3'],
+    skills: ['C# (.NET)', 'SQL', 'PHP', 'C++', 'C', 'Kotlin', 'JavaScript', 'HTML5', 'CSS3', 'XML'],
   },
   {
     titleKey: 'skills.backend',

@@ -112,8 +112,19 @@ const translations = {
     'projects.sabisext.role': 'Browser Extension Developer',
     'projects.sabisext.desc': 'A Chrome extension that injects a floating GPA simulator panel directly into the SABİS student portal. It reads the student\'s existing grades from the page, lets them simulate grade changes per course and semester in real time, and shows the impact on both semester and cumulative GPA instantly — without leaving the portal.',
 
+    'projects.alifbeekids.title': 'AlifBee Kids',
+    'projects.alifbeekids.role': 'Android Developer',
+    'projects.alifbeekids.desc': 'A native Android learning app for kids to learn Arabic, built with Kotlin and Jetpack Compose. Migrated from an XML/View-based codebase to a fully modular Clean Architecture with MVI, featuring offline-first Room caching, Retrofit networking, Hilt dependency injection, and custom interactive exercises with drag-and-drop animations and shared-element screen transitions.',
+
     // Experience
     'experience.title': 'Experience',
+    'experience.alifbee.company': 'AlifBee',
+    'experience.alifbee.role': 'Android Developer Intern',
+    'experience.alifbee.period': 'July 2026 – August 2026',
+    'experience.alifbee.point1': 'Migrated the AlifBee Kids Android app\'s UI layer from XML/View-based screens to Jetpack Compose, implementing an MVI architecture with a shared BaseViewModel<Event, State, Effect> pattern across all screens.',
+    'experience.alifbee.point2': 'Refactored the single-module app into a multi-module Clean Architecture (core:model, core:common, core:network, core:database, core:datastore, core:data, core:designsystem, core:ui, plus per-feature modules) with strict one-way dependency boundaries.',
+    'experience.alifbee.point3': 'Integrated REST APIs with Retrofit for authentication, syllabus content, and review data, backed by Room for offline-first local caching.',
+    'experience.alifbee.point4': 'Built interactive learning screens including a custom drag-and-drop matching exercise with gesture-based animations, shared-element transitions between screens, full dark/light theme support, and multi-language localization (English, Arabic, Turkish).',
     'experience.talabati.company': 'Talabati',
     'experience.talabati.role': 'Mobile / Backend Developer',
     'experience.talabati.period': 'May 2025 – January 2026',
@@ -261,8 +272,19 @@ const translations = {
     'projects.sabisext.role': 'مطور إضافات متصفح',
     'projects.sabisext.desc': 'إضافة لمتصفح Chrome تُدرج لوحة محاكاة GPA عائمة داخل بوابة طلاب SABİS مباشرةً. تقرأ الدرجات الموجودة من الصفحة، وتتيح محاكاة تغييرات الدرجات لكل مادة وفصل في الوقت الفعلي، وتُظهر الأثر على معدل الفصل والمعدل التراكمي فوراً — دون مغادرة البوابة.',
 
+    'projects.alifbeekids.title': 'AlifBee Kids',
+    'projects.alifbeekids.role': 'مطور Android',
+    'projects.alifbeekids.desc': 'تطبيق Android أصلي لتعليم الأطفال اللغة العربية، مبني باستخدام Kotlin و Jetpack Compose. تمّت إعادة هيكلته من كود XML/Views إلى Clean Architecture متعدّد الوحدات بالكامل مع نمط MVI، مع تخزين offline-first عبر Room، وشبكات Retrofit، وحقن تبعيات Hilt، وتمارين تفاعلية مخصّصة تتضمّن حركات السحب والإفلات والانتقالات المشتركة بين الشاشات.',
+
     // Experience
     'experience.title': 'الخبرة العملية',
+    'experience.alifbee.company': 'AlifBee',
+    'experience.alifbee.role': 'متدرّب مطور Android',
+    'experience.alifbee.period': 'يوليو 2026 – أغسطس 2026',
+    'experience.alifbee.point1': 'ترحيل طبقة واجهة المستخدم في تطبيق AlifBee Kids للأندرويد من شاشات XML/Views إلى Jetpack Compose، مع تطبيق معمارية MVI ونمط BaseViewModel<Event, State, Effect> مشترك عبر جميع الشاشات.',
+    'experience.alifbee.point2': 'إعادة هيكلة التطبيق أحادي الوحدة إلى Clean Architecture متعدّدة الوحدات (core:model, core:common, core:network, core:database, core:datastore, core:data, core:designsystem, core:ui، بالإضافة إلى وحدات لكل ميزة) مع حدود تبعية أحادية الاتجاه بشكل صارم.',
+    'experience.alifbee.point3': 'دمج REST APIs باستخدام Retrofit للمصادقة ومحتوى المناهج وبيانات المراجعة، مدعومة بـ Room للتخزين المحلي offline-first.',
+    'experience.alifbee.point4': 'بناء شاشات تعلّم تفاعلية تشمل تمرين مطابقة مخصّصاً بالسحب والإفلات مع حركات مبنية على الإيماءات، وانتقالات مشتركة بين الشاشات، ودعم كامل للوضعين الداكن والفاتح، وتعدّد لغات (الإنجليزية، العربية، التركية).',
     'experience.talabati.company': 'طلباتي',
     'experience.talabati.role': 'مطور موبايل / باك إند',
     'experience.talabati.period': 'مايو 2025 – يناير 2026',
