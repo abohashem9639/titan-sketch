@@ -3,6 +3,7 @@ import { useInView } from 'framer-motion';
 import { useRef } from 'react';
 import { useLanguage } from '@/contexts/LanguageContext';
 import { Briefcase, Calendar } from 'lucide-react';
+import alifbeeLogo from '@/assets/alifbee-logo.png';
 
 const Experience = () => {
   const { t } = useLanguage();
@@ -14,6 +15,7 @@ const Experience = () => {
       company: t('experience.alifbee.company'),
       role: t('experience.alifbee.role'),
       period: t('experience.alifbee.period'),
+      logo: alifbeeLogo,
       points: [
         t('experience.alifbee.point1'),
         t('experience.alifbee.point2'),
@@ -79,8 +81,16 @@ const Experience = () => {
               >
                 {/* Timeline Dot */}
                 <div className="relative z-10 flex-shrink-0">
-                  <div className="w-16 h-16 rounded-full bg-primary/10 border-2 border-primary flex items-center justify-center glow-box">
-                    <Briefcase className="text-primary" size={26} />
+                  <div className="w-16 h-16 rounded-full bg-primary/10 border-2 border-primary flex items-center justify-center glow-box overflow-hidden">
+                    {exp.logo ? (
+                      <img
+                        src={exp.logo}
+                        alt={`${exp.company} logo`}
+                        className="w-full h-full object-cover"
+                      />
+                    ) : (
+                      <Briefcase className="text-primary" size={26} />
+                    )}
                   </div>
                 </div>
 
