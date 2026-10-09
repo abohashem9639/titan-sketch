@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import { LanguageProvider } from '@/contexts/LanguageContext';
 import Navbar from '@/components/Navbar';
 import Hero from '@/components/Hero';
@@ -11,6 +12,19 @@ import Contact from '@/components/Contact';
 import Footer from '@/components/Footer';
 
 const Index = () => {
+  // Record the visit off the critical path; the analytics chunk loads lazily.
+  useEffect(() => {
+    const run = () => {
+      import('@/lib/analytics').then((m) => m.trackVisit()).catch(() => {});
+    };
+    if ('requestIdleCallback' in window) {
+      const id = window.requestIdleCallback(run, { timeout: 4000 });
+      return () => window.cancelIdleCallback(id);
+    }
+    const id = setTimeout(run, 1500);
+    return () => clearTimeout(id);
+  }, []);
+
   return (
     <LanguageProvider>
       <div className="min-h-screen bg-background">
