@@ -2,25 +2,14 @@ import { motion } from 'framer-motion';
 import { useInView } from 'framer-motion';
 import { useRef } from 'react';
 import { useLanguage } from '@/contexts/LanguageContext';
+import { useContent } from '@/content/ContentContext';
 import { Globe, Sparkles } from 'lucide-react';
 
 const Additional = () => {
-  const { t } = useLanguage();
+  const { l } = useLanguage();
+  const { additional } = useContent();
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: "-100px" });
-
-  const languages = [
-    { nameKey: 'additional.lang.arabic', levelKey: 'additional.lang.native', percent: 100 },
-    { nameKey: 'additional.lang.turkish', levelKey: 'additional.lang.fluent', percent: 100 },
-    { nameKey: 'additional.lang.english', levelKey: 'additional.lang.intermediate', percent: 65 },
-  ];
-
-  const softSkills = [
-    'additional.soft.problemSolving',
-    'additional.soft.adaptability',
-    'additional.soft.fastLearner',
-    'additional.soft.communication',
-  ];
 
   return (
     <section id="additional" className="py-24 relative overflow-hidden" ref={ref}>
@@ -33,7 +22,7 @@ const Additional = () => {
             transition={{ delay: 0.2 }}
             className="text-3xl md:text-4xl font-display font-bold mb-4"
           >
-            <span className="gradient-text">{t('additional.title')}</span>
+            <span className="gradient-text">{l(additional.title)}</span>
           </motion.h2>
           <motion.div
             initial={{ width: 0 }}
@@ -56,16 +45,16 @@ const Additional = () => {
                 <Globe size={24} />
               </div>
               <h3 className="text-xl font-display font-semibold text-foreground">
-                {t('additional.languages')}
+                {l(additional.languagesTitle)}
               </h3>
             </div>
 
             <div className="space-y-5">
-              {languages.map((lang, index) => (
-                <div key={lang.nameKey}>
+              {additional.languages.map((lang, index) => (
+                <div key={lang.id}>
                   <div className="flex items-center justify-between mb-2">
-                    <span className="text-foreground font-medium">{t(lang.nameKey)}</span>
-                    <span className="text-primary text-sm">{t(lang.levelKey)}</span>
+                    <span className="text-foreground font-medium">{l(lang.name)}</span>
+                    <span className="text-primary text-sm">{l(lang.level)}</span>
                   </div>
                   <div className="h-2 w-full bg-secondary/50 rounded-full overflow-hidden">
                     <motion.div
@@ -92,20 +81,20 @@ const Additional = () => {
                 <Sparkles size={24} />
               </div>
               <h3 className="text-xl font-display font-semibold text-foreground">
-                {t('additional.softSkills')}
+                {l(additional.softSkillsTitle)}
               </h3>
             </div>
 
             <div className="flex flex-wrap gap-2">
-              {softSkills.map((skill, index) => (
+              {additional.softSkills.map((skill, index) => (
                 <motion.span
-                  key={skill}
+                  key={skill.id}
                   initial={{ opacity: 0, scale: 0.9 }}
                   animate={isInView ? { opacity: 1, scale: 1 } : {}}
                   transition={{ delay: 0.5 + index * 0.08 }}
                   className="px-3 py-1.5 text-sm bg-secondary/50 text-muted-foreground rounded-lg border border-border/50 hover:bg-primary/10 hover:text-primary hover:border-primary/30 transition-all duration-300"
                 >
-                  {t(skill)}
+                  {l(skill.text)}
                 </motion.span>
               ))}
             </div>

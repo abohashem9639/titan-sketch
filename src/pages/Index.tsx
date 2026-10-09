@@ -1,5 +1,6 @@
 import { useEffect } from 'react';
 import { LanguageProvider } from '@/contexts/LanguageContext';
+import { ContentProvider } from '@/content/ContentContext';
 import Navbar from '@/components/Navbar';
 import Hero from '@/components/Hero';
 import About from '@/components/About';
@@ -27,20 +28,22 @@ const Index = () => {
 
   return (
     <LanguageProvider>
-      <div className="min-h-screen bg-background">
-        <Navbar />
-        <main>
-          <Hero />
-          <About />
-          <Skills />
-          <Experience />
-          <Projects />
-          <Education />
-          <Additional />
-          <Contact />
-        </main>
-        <Footer />
-      </div>
+      <ContentProvider>
+        <div className="min-h-screen bg-background">
+          <Navbar />
+          <main>
+            <Hero />
+            <About />
+            <Skills />
+            <Experience />
+            <Projects />
+            <Education />
+            <Additional />
+            <Contact />
+          </main>
+          <Footer />
+        </div>
+      </ContentProvider>
     </LanguageProvider>
   );
 };

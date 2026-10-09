@@ -1,12 +1,13 @@
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useLanguage } from '@/contexts/LanguageContext';
+import { useContent } from '@/content/ContentContext';
 import LanguageToggle from './LanguageToggle';
 import { Menu, X } from 'lucide-react';
-import profileLogo from '@/assets/profile-logo.png';
 
 const Navbar = () => {
-  const { t, isRTL } = useLanguage();
+  const { l } = useLanguage();
+  const { general } = useContent();
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
@@ -19,13 +20,13 @@ const Navbar = () => {
   }, []);
 
   const navLinks = [
-    { href: '#about', label: t('nav.about') },
-    { href: '#skills', label: t('nav.skills') },
-    { href: '#experience', label: t('nav.experience') },
-    { href: '#projects', label: t('nav.projects') },
-    { href: '#education', label: t('nav.education') },
-    { href: '#additional', label: t('nav.additional') },
-    { href: '#contact', label: t('nav.contact') },
+    { href: '#about', label: l(general.nav.about) },
+    { href: '#skills', label: l(general.nav.skills) },
+    { href: '#experience', label: l(general.nav.experience) },
+    { href: '#projects', label: l(general.nav.projects) },
+    { href: '#education', label: l(general.nav.education) },
+    { href: '#additional', label: l(general.nav.additional) },
+    { href: '#contact', label: l(general.nav.contact) },
   ];
 
   const scrollToSection = (href: string) => {
@@ -51,8 +52,8 @@ const Navbar = () => {
           whileHover={{ scale: 1.05 }}
         >
           <img 
-            src={profileLogo} 
-            alt="Salah Elden" 
+            src={general.logo}
+            alt={general.logoAlt}
             className="w-10 h-10 rounded-full object-cover border-2 border-primary/50"
           />
         </motion.a>

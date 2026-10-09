@@ -2,41 +2,11 @@ import { motion } from 'framer-motion';
 import { useInView } from 'framer-motion';
 import { useRef } from 'react';
 import { useLanguage } from '@/contexts/LanguageContext';
-
-interface SkillCategory {
-  titleKey: string;
-  skills: string[];
-}
-
-const skillCategories: SkillCategory[] = [
-  {
-    titleKey: 'skills.languages',
-    skills: ['C# (.NET)', 'SQL', 'PHP', 'C++', 'C', 'Kotlin', 'JavaScript', 'HTML5', 'CSS3', 'XML'],
-  },
-  {
-    titleKey: 'skills.backend',
-    skills: ['ASP.NET Core', '.NET 6/8/10', 'Entity Framework Core', 'RESTful APIs', 'JWT Auth', 'Centralized Error Handling', 'RBAC', 'Multi-level Permissions', 'Redis', 'RabbitMQ', 'Queue Workers', 'Background Jobs', 'Elasticsearch', 'Meilisearch'],
-  },
-  {
-    titleKey: 'skills.architecture',
-    skills: ['Clean Architecture', 'DDD', 'Microservices', 'N-Tier', 'Repository Pattern', 'Unit of Work', 'MVI', 'Unit Testing', 'Feature Testing'],
-  },
-  {
-    titleKey: 'skills.mobile',
-    skills: ['Android SDK', 'Jetpack Compose', 'Android Studio', 'Responsive Design'],
-  },
-  {
-    titleKey: 'skills.databases',
-    skills: ['PostgreSQL', 'PostGIS', 'MySQL', 'Redis', 'Complex Schema Design'],
-  },
-  {
-    titleKey: 'skills.tools',
-    skills: ['AWS', 'MinIO', 'Docker', 'Git', 'GitHub Actions', 'Jira', 'Postman', 'Figma', 'Visual Studio', 'VS Code'],
-  },
-];
+import { useContent } from '@/content/ContentContext';
 
 const Skills = () => {
-  const { t } = useLanguage();
+  const { l } = useLanguage();
+  const { skills } = useContent();
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: "-100px" });
 
@@ -54,7 +24,7 @@ const Skills = () => {
             transition={{ delay: 0.2 }}
             className="text-3xl md:text-4xl font-display font-bold mb-4"
           >
-            <span className="gradient-text">{t('skills.title')}</span>
+            <span className="gradient-text">{l(skills.title)}</span>
           </motion.h2>
           <motion.div
             initial={{ width: 0 }}
@@ -66,21 +36,21 @@ const Skills = () => {
 
         {/* Skills Grid */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
-          {skillCategories.map((category, catIndex) => (
+          {skills.categories.map((category, catIndex) => (
             <motion.div
-              key={category.titleKey}
+              key={category.id}
               initial={{ opacity: 0, y: 30 }}
               animate={isInView ? { opacity: 1, y: 0 } : {}}
               transition={{ delay: 0.2 + catIndex * 0.1 }}
               className="glass-card p-6 rounded-xl group hover:border-primary/50 transition-all duration-300"
             >
               <h3 className="text-lg font-display font-semibold text-foreground mb-4 pb-2 border-b border-border/50">
-                {t(category.titleKey)}
+                {l(category.title)}
               </h3>
               <div className="flex flex-wrap gap-2">
                 {category.skills.map((skill, skillIndex) => (
                   <motion.span
-                    key={skill}
+                    key={`${skillIndex}-${skill}`}
                     initial={{ opacity: 0, scale: 0.9 }}
                     animate={isInView ? { opacity: 1, scale: 1 } : {}}
                     transition={{ delay: 0.3 + catIndex * 0.1 + skillIndex * 0.03 }}

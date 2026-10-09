@@ -1,0 +1,1038 @@
+{
+  "general": {
+    "logo": "/images/profile-logo.png",
+    "logoAlt": "Salah Elden",
+    "socials": {
+      "github": "https://github.com/abohashem9639",
+      "linkedin": "https://www.linkedin.com/in/salahelden-abo-hashem",
+      "email": "salahelden.abohashem@gmail.com"
+    },
+    "nav": {
+      "about": {
+        "en": "About",
+        "ar": "عني"
+      },
+      "skills": {
+        "en": "Skills",
+        "ar": "المهارات"
+      },
+      "experience": {
+        "en": "Experience",
+        "ar": "الخبرة"
+      },
+      "projects": {
+        "en": "Projects",
+        "ar": "المشاريع"
+      },
+      "education": {
+        "en": "Education",
+        "ar": "التعليم"
+      },
+      "additional": {
+        "en": "More",
+        "ar": "المزيد"
+      },
+      "contact": {
+        "en": "Contact",
+        "ar": "تواصل"
+      }
+    },
+    "footer": {
+      "name": {
+        "en": "Salahuddin",
+        "ar": "Salahuddin"
+      },
+      "rights": {
+        "en": "All rights reserved.",
+        "ar": "جميع الحقوق محفوظة."
+      }
+    }
+  },
+  "hero": {
+    "status": {
+      "en": "Available for opportunities",
+      "ar": "متاح لفرص جديدة"
+    },
+    "greeting": {
+      "en": "Hello, I'm",
+      "ar": "مرحباً، أنا"
+    },
+    "name": {
+      "en": "Salahuddin",
+      "ar": "صلاح الدين"
+    },
+    "roles": [
+      {
+        "id": "role-1",
+        "text": {
+          "en": "Backend Developer",
+          "ar": "مطور Backend"
+        }
+      },
+      {
+        "id": "role-2",
+        "text": {
+          "en": "Mobile Developer",
+          "ar": "مطور Mobile"
+        }
+      },
+      {
+        "id": "role-3",
+        "text": {
+          "en": "Full-Stack Engineer",
+          "ar": "مهندس Full-Stack"
+        }
+      },
+      {
+        "id": "role-4",
+        "text": {
+          "en": "System Architect",
+          "ar": "مهندس أنظمة"
+        }
+      }
+    ],
+    "subtitle": {
+      "en": "Building Scalable Systems. Solving Complex Problems.",
+      "ar": "بناء أنظمة قابلة للتوسع. حل المشاكل المعقدة."
+    },
+    "ctaProjects": {
+      "en": "View Projects",
+      "ar": "عرض المشاريع"
+    },
+    "ctaContact": {
+      "en": "Get in Touch",
+      "ar": "تواصل معي"
+    },
+    "stats": [
+      {
+        "id": "experience",
+        "icon": "sparkles",
+        "value": "2+",
+        "label": {
+          "en": "Years of Experience",
+          "ar": "سنوات الخبرة"
+        }
+      },
+      {
+        "id": "projects",
+        "icon": "code",
+        "value": "10+",
+        "label": {
+          "en": "Projects Shipped",
+          "ar": "المشاريع المنجزة"
+        }
+      },
+      {
+        "id": "stack",
+        "icon": "rocket",
+        "value": "∞",
+        "label": {
+          "en": "Tech Stack",
+          "ar": "الستاك التقني"
+        }
+      }
+    ],
+    "techBadges": [
+      {
+        "id": "net",
+        "label": ".NET",
+        "x": 8,
+        "y": 22
+      },
+      {
+        "id": "kotlin",
+        "label": "Kotlin",
+        "x": 85,
+        "y": 18
+      },
+      {
+        "id": "docker",
+        "label": "Docker",
+        "x": 12,
+        "y": 70
+      },
+      {
+        "id": "postgresql",
+        "label": "PostgreSQL",
+        "x": 88,
+        "y": 72
+      },
+      {
+        "id": "redis",
+        "label": "Redis",
+        "x": 5,
+        "y": 45
+      },
+      {
+        "id": "aws",
+        "label": "AWS",
+        "x": 92,
+        "y": 45
+      }
+    ]
+  },
+  "about": {
+    "title": {
+      "en": "About Me",
+      "ar": "عني"
+    },
+    "highlights": [
+      {
+        "id": "backend",
+        "icon": "server",
+        "label": {
+          "en": "Backend",
+          "ar": "Backend"
+        },
+        "value": {
+          "en": "ASP.NET Core",
+          "ar": "ASP.NET Core"
+        }
+      },
+      {
+        "id": "mobile",
+        "icon": "smartphone",
+        "label": {
+          "en": "Mobile",
+          "ar": "Mobile"
+        },
+        "value": {
+          "en": "Kotlin / Compose",
+          "ar": "Kotlin / Compose"
+        }
+      },
+      {
+        "id": "experience",
+        "icon": "code",
+        "label": {
+          "en": "Experience",
+          "ar": "Experience"
+        },
+        "value": {
+          "en": "2+ Years",
+          "ar": "2+ Years"
+        }
+      }
+    ],
+    "paragraphs": [
+      {
+        "id": "p1",
+        "text": {
+          "en": "Software Developer with over 2 years of experience in building robust web and mobile applications. Specialized in backend development using ASP.NET Core and native Android development using Kotlin and Jetpack Compose.",
+          "ar": "مطور برمجيات بخبرة تزيد عن عامين في بناء تطبيقات ويب وموبايل قوية. متخصص في تطوير الباك إند باستخدام ASP.NET Core وتطوير أندرويد الأصلي باستخدام Kotlin و Jetpack Compose."
+        }
+      },
+      {
+        "id": "p2",
+        "text": {
+          "en": "Eager to deepen technical expertise by joining highly experienced teams and contributing effectively to large-scale, challenging projects.",
+          "ar": "حريص على تعميق الخبرة التقنية من خلال الانضمام إلى فرق ذات خبرة عالية والمساهمة بفعالية في مشاريع كبيرة ومعقدة."
+        }
+      },
+      {
+        "id": "p3",
+        "text": {
+          "en": "I focus on writing clean, maintainable code following best practices like Clean Architecture, DDD, and comprehensive testing strategies.",
+          "ar": "أركز على كتابة كود نظيف وقابل للصيانة باتباع أفضل الممارسات مثل Clean Architecture و DDD واستراتيجيات الاختبار الشاملة."
+        }
+      }
+    ]
+  },
+  "skills": {
+    "title": {
+      "en": "Technical Skills",
+      "ar": "المهارات التقنية"
+    },
+    "categories": [
+      {
+        "id": "languages",
+        "title": {
+          "en": "Programming Languages",
+          "ar": "لغات البرمجة"
+        },
+        "skills": [
+          "C# (.NET)",
+          "SQL",
+          "PHP",
+          "C++",
+          "C",
+          "Kotlin",
+          "JavaScript",
+          "HTML5",
+          "CSS3",
+          "XML"
+        ]
+      },
+      {
+        "id": "backend",
+        "title": {
+          "en": "Backend Development",
+          "ar": "تطوير الباك إند"
+        },
+        "skills": [
+          "ASP.NET Core",
+          ".NET 6/8/10",
+          "Entity Framework Core",
+          "RESTful APIs",
+          "JWT Auth",
+          "Centralized Error Handling",
+          "RBAC",
+          "Multi-level Permissions",
+          "Redis",
+          "RabbitMQ",
+          "Queue Workers",
+          "Background Jobs",
+          "Elasticsearch",
+          "Meilisearch"
+        ]
+      },
+      {
+        "id": "architecture",
+        "title": {
+          "en": "Architecture & Patterns",
+          "ar": "الهندسة والأنماط"
+        },
+        "skills": [
+          "Clean Architecture",
+          "DDD",
+          "Microservices",
+          "N-Tier",
+          "Repository Pattern",
+          "Unit of Work",
+          "MVI",
+          "Unit Testing",
+          "Feature Testing"
+        ]
+      },
+      {
+        "id": "mobile",
+        "title": {
+          "en": "Mobile & Frontend",
+          "ar": "الموبايل والفرونت إند"
+        },
+        "skills": [
+          "Android SDK",
+          "Jetpack Compose",
+          "Android Studio",
+          "Responsive Design"
+        ]
+      },
+      {
+        "id": "databases",
+        "title": {
+          "en": "Databases",
+          "ar": "قواعد البيانات"
+        },
+        "skills": [
+          "PostgreSQL",
+          "PostGIS",
+          "MySQL",
+          "Redis",
+          "Complex Schema Design"
+        ]
+      },
+      {
+        "id": "tools",
+        "title": {
+          "en": "Tools & Platforms",
+          "ar": "الأدوات والمنصات"
+        },
+        "skills": [
+          "AWS",
+          "MinIO",
+          "Docker",
+          "Git",
+          "GitHub Actions",
+          "Jira",
+          "Postman",
+          "Figma",
+          "Visual Studio",
+          "VS Code"
+        ]
+      }
+    ]
+  },
+  "experience": {
+    "title": {
+      "en": "Experience",
+      "ar": "الخبرة العملية"
+    },
+    "items": [
+      {
+        "id": "alifbee",
+        "company": {
+          "en": "AlifBee",
+          "ar": "AlifBee"
+        },
+        "role": {
+          "en": "Android Developer Intern",
+          "ar": "متدرّب مطور Android"
+        },
+        "period": {
+          "en": "July 2026 – August 2026",
+          "ar": "يوليو 2026 – أغسطس 2026"
+        },
+        "logo": "/images/alifbee-logo.png",
+        "points": [
+          {
+            "id": "alifbee-p1",
+            "text": {
+              "en": "Migrated the AlifBee Kids Android app's UI layer from XML/View-based screens to Jetpack Compose, implementing an MVI architecture with a shared BaseViewModel<Event, State, Effect> pattern across all screens.",
+              "ar": "ترحيل طبقة واجهة المستخدم في تطبيق AlifBee Kids للأندرويد من شاشات XML/Views إلى Jetpack Compose، مع تطبيق معمارية MVI ونمط BaseViewModel<Event, State, Effect> مشترك عبر جميع الشاشات."
+            }
+          },
+          {
+            "id": "alifbee-p2",
+            "text": {
+              "en": "Refactored the single-module app into a multi-module Clean Architecture (core:model, core:common, core:network, core:database, core:datastore, core:data, core:designsystem, core:ui, plus per-feature modules) with strict one-way dependency boundaries.",
+              "ar": "إعادة هيكلة التطبيق أحادي الوحدة إلى Clean Architecture متعدّدة الوحدات (core:model, core:common, core:network, core:database, core:datastore, core:data, core:designsystem, core:ui، بالإضافة إلى وحدات لكل ميزة) مع حدود تبعية أحادية الاتجاه بشكل صارم."
+            }
+          },
+          {
+            "id": "alifbee-p3",
+            "text": {
+              "en": "Integrated REST APIs with Retrofit for authentication, syllabus content, and review data, backed by Room for offline-first local caching.",
+              "ar": "دمج REST APIs باستخدام Retrofit للمصادقة ومحتوى المناهج وبيانات المراجعة، مدعومة بـ Room للتخزين المحلي offline-first."
+            }
+          },
+          {
+            "id": "alifbee-p4",
+            "text": {
+              "en": "Built interactive learning screens including a custom drag-and-drop matching exercise with gesture-based animations, shared-element transitions between screens, full dark/light theme support, and multi-language localization (English, Arabic, Turkish).",
+              "ar": "بناء شاشات تعلّم تفاعلية تشمل تمرين مطابقة مخصّصاً بالسحب والإفلات مع حركات مبنية على الإيماءات، وانتقالات مشتركة بين الشاشات، ودعم كامل للوضعين الداكن والفاتح، وتعدّد لغات (الإنجليزية، العربية، التركية)."
+            }
+          }
+        ]
+      },
+      {
+        "id": "talabati",
+        "company": {
+          "en": "Talabati",
+          "ar": "طلباتي"
+        },
+        "role": {
+          "en": "Mobile / Backend Developer",
+          "ar": "مطور موبايل / باك إند"
+        },
+        "period": {
+          "en": "May 2025 – January 2026",
+          "ar": "مايو 2025 – يناير 2026"
+        },
+        "logo": "",
+        "points": [
+          {
+            "id": "talabati-p1",
+            "text": {
+              "en": "Developed the mobile application front-end using Kotlin and Jetpack Compose.",
+              "ar": "تطوير واجهة تطبيق الموبايل باستخدام Kotlin و Jetpack Compose."
+            }
+          },
+          {
+            "id": "talabati-p2",
+            "text": {
+              "en": "Built and maintained the user-facing back-end API using ASP.NET Core (.NET 8).",
+              "ar": "بناء وصيانة الـ API الخاص بالمستخدمين باستخدام ASP.NET Core (.NET 8)."
+            }
+          },
+          {
+            "id": "talabati-p3",
+            "text": {
+              "en": "Engineered the back-end infrastructure for both the Admin and Company control panels, focusing on institutional management systems for branches and orders.",
+              "ar": "هندسة البنية التحتية للباك إند للوحتي تحكم الإدارة والشركات، مع التركيز على أنظمة الإدارة المؤسسية للفروع والطلبات."
+            }
+          }
+        ]
+      },
+      {
+        "id": "omega",
+        "company": {
+          "en": "Omega Education",
+          "ar": "Omega Education"
+        },
+        "role": {
+          "en": "Full Stack Developer",
+          "ar": "مطور Full Stack"
+        },
+        "period": {
+          "en": "July 2024 – April 2025",
+          "ar": "يوليو 2024 – أبريل 2025"
+        },
+        "logo": "/images/omega-logo.png",
+        "points": [
+          {
+            "id": "omega-p1",
+            "text": {
+              "en": "Developed an integrated platform for hosting recorded courses and conducting online examinations.",
+              "ar": "تطوير منصة متكاملة لاستضافة الدورات المسجلة وإجراء الامتحانات عبر الإنترنت."
+            }
+          },
+          {
+            "id": "omega-p2",
+            "text": {
+              "en": "Implemented an automated scoring and evaluation system to streamline the online testing process.",
+              "ar": "تنفيذ نظام تقييم وتصحيح آلي لتبسيط عملية الاختبارات الإلكترونية."
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "projects": {
+    "title": {
+      "en": "Projects",
+      "ar": "المشاريع"
+    },
+    "items": [
+      {
+        "id": "talabati",
+        "title": {
+          "en": "Talabati",
+          "ar": "طلباتي"
+        },
+        "role": {
+          "en": "Full-Stack Developer",
+          "ar": "مطور Full-Stack"
+        },
+        "description": {
+          "en": "An integrated ordering platform (restaurants, markets, pharmacies) with robust API using Clean Architecture and native Android app with Jetpack Compose.",
+          "ar": "منصة طلبات متكاملة (مطاعم، أسواق، صيدليات) مع API قوي باستخدام Clean Architecture وتطبيق أندرويد أصلي مع Jetpack Compose."
+        },
+        "tech": [
+          "ASP.NET Core",
+          "Clean Architecture",
+          "PostgreSQL",
+          "Kotlin",
+          "Jetpack Compose",
+          "MVI"
+        ],
+        "glowFrom": "#06b6d4",
+        "glowTo": "#3b82f6",
+        "github": "",
+        "liveUrl": ""
+      },
+      {
+        "id": "talabatiCompany",
+        "title": {
+          "en": "TalabatiCompany",
+          "ar": "طلباتي للشركات"
+        },
+        "role": {
+          "en": "Project Lead",
+          "ar": "قائد المشروع"
+        },
+        "description": {
+          "en": "Control panel for business management with Branch Management, Inventory/Stock Tracking, and Order Processing modules.",
+          "ar": "لوحة تحكم لإدارة الأعمال مع وحدات إدارة الفروع وتتبع المخزون ومعالجة الطلبات."
+        },
+        "tech": [
+          "ASP.NET Core",
+          "Branch Management",
+          "Inventory",
+          "Order Processing"
+        ],
+        "glowFrom": "#10b981",
+        "glowTo": "#06b6d4",
+        "github": "",
+        "liveUrl": ""
+      },
+      {
+        "id": "mkcl",
+        "title": {
+          "en": "MKCL — Majaz Al Khalig",
+          "ar": "MKCL — مجاز الخليج"
+        },
+        "role": {
+          "en": "Backend Developer",
+          "ar": "مطور Backend"
+        },
+        "description": {
+          "en": "Tailored CRM system built for an engineering consulting firm (MKCL — Majaz Al Khalig Co. Ltd.). Centralizes employee management, client relationship management, and incoming-report tracking under a single secure RESTful API.",
+          "ar": "نظام CRM مخصّص لإدارة شركة استشارات هندسية (MKCL — مجاز الخليج المحدودة). يوفّر إدارة موحّدة للموظفين والعملاء وتتبّع التقارير الواردة عبر API خلفي آمن باستخدام ASP.NET Core و .NET 8."
+        },
+        "tech": [
+          "ASP.NET Core",
+          ".NET 8",
+          "Web API",
+          "Employee Management",
+          "Client Management",
+          "Reports"
+        ],
+        "glowFrom": "#14b8a6",
+        "glowTo": "#10b981",
+        "github": "",
+        "liveUrl": ""
+      },
+      {
+        "id": "diff",
+        "title": {
+          "en": "Diff",
+          "ar": "Diff"
+        },
+        "role": {
+          "en": "Full-Stack Developer",
+          "ar": "مطور Full-Stack"
+        },
+        "description": {
+          "en": "Modern e-commerce platform for trendy clothing. Built with React, Vite, Tailwind CSS, and Shadcn UI. Features Supabase backend, React Query for data fetching, and i18next for multi-language support.",
+          "ar": "متجر إلكتروني لبيع الألبسة العصرية. مبني باستخدام React، Vite، Tailwind CSS، و Shadcn UI. يتضمن قاعدة بيانات Supabase، و React Query لجلب البيانات، ودعم تعدد اللغات."
+        },
+        "tech": [
+          "React",
+          "TypeScript",
+          "Vite",
+          "Tailwind CSS",
+          "Supabase",
+          "React Query"
+        ],
+        "glowFrom": "#8b5cf6",
+        "glowTo": "#d946ef",
+        "github": "",
+        "liveUrl": ""
+      },
+      {
+        "id": "omega",
+        "title": {
+          "en": "Omega Education",
+          "ar": "Omega Education"
+        },
+        "role": {
+          "en": "Full-Stack Developer",
+          "ar": "مطور Full-Stack"
+        },
+        "description": {
+          "en": "Comprehensive e-learning platform featuring recorded courses, job listings, downloadable worksheets, and a professional online examination system that mirrors the TR-YÖS test experience, backed by an advanced automated grading and evaluation engine.",
+          "ar": "منصة تعليمية متكاملة تشمل الدورات المسجلة وقسم الوظائف وأوراق العمل، مع نظام تقديم امتحانات إلكتروني احترافي يحاكي تجربة امتحانات TR-YÖS، مدعوم بمحرك تصحيح وتقييم آلي متقدم."
+        },
+        "tech": [
+          "PHP",
+          "JavaScript",
+          "Bootstrap",
+          "HTML/CSS",
+          "Auto-Grading",
+          "TR-YÖS Style Exams"
+        ],
+        "glowFrom": "#f43f5e",
+        "glowTo": "#d946ef",
+        "github": "",
+        "liveUrl": ""
+      },
+      {
+        "id": "ghiras",
+        "title": {
+          "en": "Ghiras 26 — Nadi Nawa",
+          "ar": "غراس 26 — نادي نواة"
+        },
+        "role": {
+          "en": "Full-Stack Developer",
+          "ar": "مطور Full-Stack"
+        },
+        "description": {
+          "en": "Ramadan Iftar Management System built with Next.js App Router. Features a responsive UI with Tailwind CSS and full-stack capabilities using PostgreSQL, SQLite, and BcryptJS for secure authentication.",
+          "ar": "نظام إدارة إفطار رمضان مبني باستخدام Next.js App Router. يتميز بواجهة متجاوبة مع Tailwind CSS ويدمج بين PostgreSQL و SQLite لإدارة البيانات، مع BcryptJS للمصادقة الآمنة."
+        },
+        "tech": [
+          "Next.js",
+          "TypeScript",
+          "Tailwind CSS",
+          "PostgreSQL",
+          "SQLite",
+          "BcryptJS"
+        ],
+        "glowFrom": "#f59e0b",
+        "glowTo": "#ef4444",
+        "github": "",
+        "liveUrl": ""
+      },
+      {
+        "id": "crm",
+        "title": {
+          "en": "University CRM",
+          "ar": "نظام CRM الجامعي"
+        },
+        "role": {
+          "en": "Backend Developer",
+          "ar": "مطور Backend"
+        },
+        "description": {
+          "en": "Custom CRM system for managing student files during private university admissions with advanced workflows.",
+          "ar": "نظام CRM مخصص لإدارة ملفات الطلاب أثناء القبول الجامعي مع سير عمل متقدم."
+        },
+        "tech": [
+          "ASP.NET Core",
+          "Workflows",
+          "Student Management"
+        ],
+        "glowFrom": "#3b82f6",
+        "glowTo": "#6366f1",
+        "github": "",
+        "liveUrl": ""
+      },
+      {
+        "id": "quick",
+        "title": {
+          "en": "Quick",
+          "ar": "Quick"
+        },
+        "role": {
+          "en": "Full-Stack Developer",
+          "ar": "مطور Full-Stack"
+        },
+        "description": {
+          "en": "Restaurant management and order-processing system with user-friendly interface and dedicated admin panels for each restaurant.",
+          "ar": "نظام إدارة المطاعم ومعالجة الطلبات مع واجهة سهلة الاستخدام ولوحات إدارة مخصصة لكل مطعم."
+        },
+        "tech": [
+          "PHP",
+          "JavaScript",
+          "Bootstrap",
+          "Admin Panel"
+        ],
+        "glowFrom": "#f97316",
+        "glowTo": "#f59e0b",
+        "github": "",
+        "liveUrl": ""
+      },
+      {
+        "id": "m79",
+        "title": {
+          "en": "M79",
+          "ar": "M79"
+        },
+        "role": {
+          "en": "Full-Stack Developer",
+          "ar": "مطور Full-Stack"
+        },
+        "description": {
+          "en": "Real-time car auction platform engineered to handle high concurrency with low latency for fair bidding experience.",
+          "ar": "منصة مزادات سيارات في الوقت الفعلي مصممة للتعامل مع التزامن العالي وزمن استجابة منخفض."
+        },
+        "tech": [
+          "PHP",
+          "Real-time",
+          "High Concurrency",
+          "Low Latency"
+        ],
+        "glowFrom": "#a855f7",
+        "glowTo": "#ec4899",
+        "github": "",
+        "liveUrl": ""
+      },
+      {
+        "id": "notepad",
+        "title": {
+          "en": "Notepad",
+          "ar": "Notepad"
+        },
+        "role": {
+          "en": "Full-Stack Developer",
+          "ar": "مطور Full-Stack"
+        },
+        "description": {
+          "en": "Real-time collaborative note-taking SaaS where any URL becomes a shareable note (e.g., /abohashem). Features password-protected notes with email-based recovery, multi-font editor, dark mode that follows system preference, and live collaboration powered by SignalR.",
+          "ar": "منصة SaaS لتدوين الملاحظات بشكل تشاركي في الوقت الفعلي، حيث يتحوّل أي رابط (مثل /abohashem) إلى ملاحظة قابلة للمشاركة. تتضمّن ملاحظات محميّة بكلمة مرور مع استعادة عبر البريد الإلكتروني، محرّر متعدّد الخطوط، وضع داكن يتبع إعدادات النظام، وتعاون مباشر مدعوم بـ SignalR."
+        },
+        "tech": [
+          "ASP.NET Core",
+          "Clean Architecture",
+          "PostgreSQL",
+          "React",
+          "TypeScript",
+          "SignalR",
+          "Tailwind CSS",
+          "JWT Auth"
+        ],
+        "glowFrom": "#0ea5e9",
+        "glowTo": "#6366f1",
+        "github": "",
+        "liveUrl": ""
+      },
+      {
+        "id": "findmydevice",
+        "title": {
+          "en": "FindMyDevice — Smart Anti-Theft",
+          "ar": "FindMyDevice — حماية ذكية من السرقة"
+        },
+        "role": {
+          "en": "Full-Stack Developer",
+          "ar": "مطور Full-Stack"
+        },
+        "description": {
+          "en": "Never lose your phone again. Real-time location tracking with battery and network status, plus instant anti-theft alerts the moment your device's GPS is disabled — all from a clean web dashboard.",
+          "ar": "لا تفقد هاتفك مرة أخرى. تتبّع موقع لحظي مع حالة البطارية والشبكة، بالإضافة إلى تنبيهات فورية ضد السرقة في اللحظة التي يُعطَّل فيها الـ GPS — كل ذلك من لوحة تحكم ويب أنيقة."
+        },
+        "tech": [
+          ".NET 10",
+          "Clean Architecture",
+          "Kotlin",
+          "Jetpack Compose",
+          "Next.js 16",
+          "Leaflet"
+        ],
+        "glowFrom": "#84cc16",
+        "glowTo": "#10b981",
+        "github": "",
+        "liveUrl": ""
+      },
+      {
+        "id": "radiokeep",
+        "title": {
+          "en": "RadioKeep",
+          "ar": "RadioKeep"
+        },
+        "role": {
+          "en": "Full-Stack Developer",
+          "ar": "مطور Full-Stack"
+        },
+        "description": {
+          "en": "Enterprise-grade SaaS platform for managing and streaming radio stations. Users can browse default stations, add custom ones, mark favorites, reorder via drag-and-drop, and customize themes and language. Built as a clean-architecture monorepo with a secure JWT auth flow and a real-time audio player.",
+          "ar": "منصة SaaS لإدارة وتشغيل محطات الراديو بمعمارية مؤسسية. تتيح للمستخدم تصفح المحطات الافتراضية، إضافة محطات مخصصة، تحديد المفضلة، إعادة ترتيبها بالسحب والإفلات، وتخصيص السمات واللغة. مبنية كـ monorepo بـ Clean Architecture ونظام مصادقة JWT آمن مع مشغل صوت تفاعلي."
+        },
+        "tech": [
+          ".NET 10",
+          "ASP.NET Core",
+          "Clean Architecture",
+          "EF Core",
+          "PostgreSQL",
+          "JWT Auth",
+          "React",
+          "TypeScript",
+          "Vite",
+          "Tailwind CSS",
+          "shadcn/ui",
+          "TanStack Query",
+          "i18next"
+        ],
+        "glowFrom": "#ec4899",
+        "glowTo": "#f43f5e",
+        "github": "",
+        "liveUrl": ""
+      },
+      {
+        "id": "sabisgpa",
+        "title": {
+          "en": "SABİS GPA & Transkript Hesaplayıcı",
+          "ar": "SABİS — حاسبة GPA وكشف الدرجات"
+        },
+        "role": {
+          "en": "Full-Stack Developer",
+          "ar": "مطور Full-Stack"
+        },
+        "description": {
+          "en": "A web application for Sakarya University students to calculate and simulate their GPA. Features a manual course calculator with PDF transcript auto-import, a full transcript simulator showing all 8 semesters with editable grades and AKTS credits, and cloud sync via Supabase so data persists across devices after login.",
+          "ar": "تطبيق ويب لطلاب جامعة سكاريا لحساب ومحاكاة المعدل التراكمي (GPA). يضمّ حاسبة مواد يدوية مع استيراد آلي لكشف الدرجات من ملف PDF، ومحاكي كشف كامل يعرض الفصول الثمانية بإمكانية تعديل الدرجات وساعات AKTS، ومزامنة سحابية عبر Supabase تحفظ البيانات عبر الأجهزة بعد تسجيل الدخول."
+        },
+        "tech": [
+          "React",
+          "TypeScript",
+          "Vite",
+          "Tailwind CSS",
+          "Supabase",
+          "PDF.js",
+          "TanStack Query"
+        ],
+        "glowFrom": "#6366f1",
+        "glowTo": "#a855f7",
+        "github": "",
+        "liveUrl": ""
+      },
+      {
+        "id": "sabisext",
+        "title": {
+          "en": "SABİS GPA Simülatörü — Chrome Extension",
+          "ar": "SABİS GPA Simülatörü — إضافة Chrome"
+        },
+        "role": {
+          "en": "Browser Extension Developer",
+          "ar": "مطور إضافات متصفح"
+        },
+        "description": {
+          "en": "A Chrome extension that injects a floating GPA simulator panel directly into the SABİS student portal. It reads the student's existing grades from the page, lets them simulate grade changes per course and semester in real time, and shows the impact on both semester and cumulative GPA instantly — without leaving the portal.",
+          "ar": "إضافة لمتصفح Chrome تُدرج لوحة محاكاة GPA عائمة داخل بوابة طلاب SABİS مباشرةً. تقرأ الدرجات الموجودة من الصفحة، وتتيح محاكاة تغييرات الدرجات لكل مادة وفصل في الوقت الفعلي، وتُظهر الأثر على معدل الفصل والمعدل التراكمي فوراً — دون مغادرة البوابة."
+        },
+        "tech": [
+          "Chrome Extension",
+          "Manifest V3",
+          "TypeScript",
+          "React",
+          "Tailwind CSS",
+          "Content Scripts",
+          "DOM Injection"
+        ],
+        "glowFrom": "#eab308",
+        "glowTo": "#f97316",
+        "github": "",
+        "liveUrl": ""
+      },
+      {
+        "id": "alifbeekids",
+        "title": {
+          "en": "AlifBee Kids",
+          "ar": "AlifBee Kids"
+        },
+        "role": {
+          "en": "Android Developer",
+          "ar": "مطور Android"
+        },
+        "description": {
+          "en": "A native Android learning app for kids to learn Arabic, built with Kotlin and Jetpack Compose. Migrated from an XML/View-based codebase to a fully modular Clean Architecture with MVI, featuring offline-first Room caching, Retrofit networking, Hilt dependency injection, and custom interactive exercises with drag-and-drop animations and shared-element screen transitions.",
+          "ar": "تطبيق Android أصلي لتعليم الأطفال اللغة العربية، مبني باستخدام Kotlin و Jetpack Compose. تمّت إعادة هيكلته من كود XML/Views إلى Clean Architecture متعدّد الوحدات بالكامل مع نمط MVI، مع تخزين offline-first عبر Room، وشبكات Retrofit، وحقن تبعيات Hilt، وتمارين تفاعلية مخصّصة تتضمّن حركات السحب والإفلات والانتقالات المشتركة بين الشاشات."
+        },
+        "tech": [
+          "Kotlin",
+          "Jetpack Compose",
+          "MVI",
+          "Hilt",
+          "Room",
+          "Retrofit",
+          "Clean Architecture",
+          "XML"
+        ],
+        "glowFrom": "#ef4444",
+        "glowTo": "#f97316",
+        "github": "",
+        "liveUrl": ""
+      }
+    ]
+  },
+  "education": {
+    "title": {
+      "en": "Education",
+      "ar": "التعليم"
+    },
+    "items": [
+      {
+        "id": "sakarya",
+        "degree": {
+          "en": "B.Sc. in Computer Engineering",
+          "ar": "بكالوريوس في هندسة الحاسوب"
+        },
+        "institution": {
+          "en": "Sakarya University",
+          "ar": "جامعة سكاريا"
+        },
+        "location": {
+          "en": "Sakarya, Turkey",
+          "ar": "سكاريا، تركيا"
+        },
+        "period": {
+          "en": "2023 - 2027",
+          "ar": "2023 - 2027"
+        }
+      }
+    ]
+  },
+  "additional": {
+    "title": {
+      "en": "Languages & Soft Skills",
+      "ar": "اللغات والمهارات الشخصية"
+    },
+    "languagesTitle": {
+      "en": "Languages",
+      "ar": "اللغات"
+    },
+    "softSkillsTitle": {
+      "en": "Soft Skills",
+      "ar": "المهارات الشخصية"
+    },
+    "languages": [
+      {
+        "id": "arabic",
+        "name": {
+          "en": "Arabic",
+          "ar": "العربية"
+        },
+        "level": {
+          "en": "Native",
+          "ar": "لغة أم"
+        },
+        "percent": 100
+      },
+      {
+        "id": "turkish",
+        "name": {
+          "en": "Turkish",
+          "ar": "التركية"
+        },
+        "level": {
+          "en": "Fluent",
+          "ar": "بطلاقة"
+        },
+        "percent": 100
+      },
+      {
+        "id": "english",
+        "name": {
+          "en": "English",
+          "ar": "الإنجليزية"
+        },
+        "level": {
+          "en": "Intermediate",
+          "ar": "متوسط"
+        },
+        "percent": 65
+      }
+    ],
+    "softSkills": [
+      {
+        "id": "problemSolving",
+        "text": {
+          "en": "Problem Solving",
+          "ar": "حل المشكلات"
+        }
+      },
+      {
+        "id": "adaptability",
+        "text": {
+          "en": "Adaptability",
+          "ar": "القدرة على التكيف"
+        }
+      },
+      {
+        "id": "fastLearner",
+        "text": {
+          "en": "Fast Learner",
+          "ar": "سرعة التعلم"
+        }
+      },
+      {
+        "id": "communication",
+        "text": {
+          "en": "Effective Communication",
+          "ar": "التواصل الفعّال"
+        }
+      }
+    ]
+  },
+  "contact": {
+    "title": {
+      "en": "Get in Touch",
+      "ar": "تواصل معي"
+    },
+    "subtitle": {
+      "en": "Let's build something amazing together",
+      "ar": "دعنا نبني شيئاً رائعاً معاً"
+    },
+    "email": "salahelden.abohashem@gmail.com",
+    "phone": "+90 531 606 0888",
+    "location": {
+      "en": "Sakarya, Turkey",
+      "ar": "Sakarya, Turkey"
+    },
+    "emailLabel": {
+      "en": "Email",
+      "ar": "البريد الإلكتروني"
+    },
+    "phoneLabel": {
+      "en": "Phone",
+      "ar": "الهاتف"
+    },
+    "locationLabel": {
+      "en": "Location",
+      "ar": "الموقع"
+    },
+    "cta": {
+      "en": "Send Message",
+      "ar": "إرسال رسالة"
+    }
+  }
+}

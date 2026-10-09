@@ -2,18 +2,21 @@ import { motion } from 'framer-motion';
 import { useInView } from 'framer-motion';
 import { useRef } from 'react';
 import { useLanguage } from '@/contexts/LanguageContext';
-import { Code2, Server, Smartphone } from 'lucide-react';
+import { useContent } from '@/content/ContentContext';
+import { getIcon } from '@/content/icons';
 
 const About = () => {
-  const { t } = useLanguage();
+  const { l } = useLanguage();
+  const { about } = useContent();
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: "-100px" });
 
-  const highlights = [
-    { icon: Server, label: 'Backend', value: 'ASP.NET Core' },
-    { icon: Smartphone, label: 'Mobile', value: 'Kotlin / Compose' },
-    { icon: Code2, label: 'Experience', value: '2+ Years' },
-  ];
+  const highlights = about.highlights.map((h) => ({
+    id: h.id,
+    icon: getIcon(h.icon),
+    label: l(h.label),
+    value: l(h.value),
+  }));
 
   return (
     <section id="about" className="py-24 relative overflow-hidden" ref={ref}>
@@ -32,7 +35,7 @@ const About = () => {
               transition={{ delay: 0.2 }}
               className="text-3xl md:text-4xl font-display font-bold mb-4"
             >
-              <span className="gradient-text">{t('about.title')}</span>
+              <span className="gradient-text">{l(about.title)}</span>
             </motion.h2>
             <motion.div
               initial={{ width: 0 }}
@@ -46,7 +49,7 @@ const About = () => {
           <div className="grid md:grid-cols-3 gap-8 mb-12">
             {highlights.map((item, index) => (
               <motion.div
-                key={item.label}
+                key={item.id}
                 initial={{ opacity: 0, y: 30 }}
                 animate={isInView ? { opacity: 1, y: 0 } : {}}
                 transition={{ delay: 0.3 + index * 0.1 }}
@@ -68,15 +71,11 @@ const About = () => {
             transition={{ delay: 0.5 }}
             className="glass-card p-8 rounded-2xl space-y-6"
           >
-            <p className="text-muted-foreground leading-relaxed text-lg">
-              {t('about.p1')}
-            </p>
-            <p className="text-muted-foreground leading-relaxed text-lg">
-              {t('about.p2')}
-            </p>
-            <p className="text-muted-foreground leading-relaxed text-lg">
-              {t('about.p3')}
-            </p>
+            {about.paragraphs.map((p) => (
+              <p key={p.id} className="text-muted-foreground leading-relaxed text-lg">
+                {l(p.text)}
+              </p>
+            ))}
           </motion.div>
         </motion.div>
       </div>

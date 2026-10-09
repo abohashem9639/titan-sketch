@@ -6,7 +6,7 @@ import { disableTracking, getVisitorId } from '@/lib/analytics';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
-import VisitorDashboard from '@/components/admin/VisitorDashboard';
+import AdminShell from '@/components/admin/AdminShell';
 
 const Shell = ({ children }: { children: React.ReactNode }) => (
   <div className="min-h-screen bg-background relative overflow-hidden">
@@ -49,7 +49,7 @@ const LoginForm = () => {
         <h1 className="text-2xl font-display font-bold">
           <span className="gradient-text">Admin</span>
         </h1>
-        <p className="text-sm text-muted-foreground mt-1">Sign in to view analytics</p>
+        <p className="text-sm text-muted-foreground mt-1">Sign in to the control panel</p>
       </div>
 
       <form onSubmit={onSubmit} className="space-y-4">
@@ -97,7 +97,7 @@ const Admin = () => {
     meta.content = 'noindex, nofollow';
     document.head.appendChild(meta);
     const prevTitle = document.title;
-    document.title = 'Admin · Analytics';
+    document.title = 'Control Panel';
     return () => {
       meta.remove();
       document.title = prevTitle;
@@ -183,7 +183,7 @@ const Admin = () => {
 
   return (
     <Shell>
-      <VisitorDashboard email={session.user.email ?? ''} onSignOut={signOut} />
+      <AdminShell email={session.user.email ?? ''} onSignOut={signOut} />
     </Shell>
   );
 };

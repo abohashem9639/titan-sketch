@@ -2,49 +2,23 @@ import { motion } from 'framer-motion';
 import { useInView } from 'framer-motion';
 import { useRef } from 'react';
 import { useLanguage } from '@/contexts/LanguageContext';
+import { useContent } from '@/content/ContentContext';
 import { Briefcase, Calendar } from 'lucide-react';
-import alifbeeLogo from '@/assets/alifbee-logo.png';
-import omegaLogo from '@/assets/omega-logo.png';
 
 const Experience = () => {
-  const { t } = useLanguage();
+  const { l } = useLanguage();
+  const { experience } = useContent();
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: "-100px" });
 
-  const experiences = [
-    {
-      company: t('experience.alifbee.company'),
-      role: t('experience.alifbee.role'),
-      period: t('experience.alifbee.period'),
-      logo: alifbeeLogo,
-      points: [
-        t('experience.alifbee.point1'),
-        t('experience.alifbee.point2'),
-        t('experience.alifbee.point3'),
-        t('experience.alifbee.point4'),
-      ],
-    },
-    {
-      company: t('experience.talabati.company'),
-      role: t('experience.talabati.role'),
-      period: t('experience.talabati.period'),
-      points: [
-        t('experience.talabati.point1'),
-        t('experience.talabati.point2'),
-        t('experience.talabati.point3'),
-      ],
-    },
-    {
-      company: t('experience.omega.company'),
-      role: t('experience.omega.role'),
-      period: t('experience.omega.period'),
-      logo: omegaLogo,
-      points: [
-        t('experience.omega.point1'),
-        t('experience.omega.point2'),
-      ],
-    },
-  ];
+  const experiences = experience.items.map((e) => ({
+    id: e.id,
+    company: l(e.company),
+    role: l(e.role),
+    period: l(e.period),
+    logo: e.logo,
+    points: e.points.map((p) => ({ id: p.id, text: l(p.text) })),
+  }));
 
   return (
     <section id="experience" className="py-24 relative overflow-hidden" ref={ref}>
@@ -57,7 +31,7 @@ const Experience = () => {
             transition={{ delay: 0.2 }}
             className="text-3xl md:text-4xl font-display font-bold mb-4"
           >
-            <span className="gradient-text">{t('experience.title')}</span>
+            <span className="gradient-text">{l(experience.title)}</span>
           </motion.h2>
           <motion.div
             initial={{ width: 0 }}
@@ -75,7 +49,7 @@ const Experience = () => {
 
             {experiences.map((exp, index) => (
               <motion.div
-                key={index}
+                key={exp.id}
                 initial={{ opacity: 0, y: 30 }}
                 animate={isInView ? { opacity: 1, y: 0 } : {}}
                 transition={{ delay: 0.3 + index * 0.2 }}
@@ -111,15 +85,15 @@ const Experience = () => {
                   </div>
 
                   <ul className="space-y-2">
-                    {exp.points.map((point, i) => (
+                    {exp.points.map((point) => (
                       <li
-                        key={i}
+                        key={point.id}
                         className="flex gap-3 text-muted-foreground text-sm leading-relaxed"
                       >
                         <span className="text-primary mt-1.5 flex-shrink-0">
                           <span className="block w-1.5 h-1.5 rounded-full bg-primary" />
                         </span>
-                        <span>{point}</span>
+                        <span>{point.text}</span>
                       </li>
                     ))}
                   </ul>

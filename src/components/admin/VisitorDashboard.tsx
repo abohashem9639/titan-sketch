@@ -17,7 +17,6 @@ import {
   Eye,
   Globe,
   Loader2,
-  LogOut,
   Monitor,
   RefreshCw,
   Repeat,
@@ -169,7 +168,7 @@ const BreakdownCard = ({
   </div>
 );
 
-const VisitorDashboard = ({ email, onSignOut }: { email: string; onSignOut: () => void }) => {
+const VisitorDashboard = () => {
   const [days, setDays] = useState<(typeof RANGES)[number]>(30);
 
   const { data, isLoading, isFetching, error, refetch, dataUpdatedAt } = useQuery({
@@ -184,26 +183,20 @@ const VisitorDashboard = ({ email, onSignOut }: { email: string; onSignOut: () =
   const rangeNew = data?.daily.reduce((sum, d) => sum + d.count, 0) ?? 0;
 
   return (
-    <div className="container mx-auto px-4 py-10 max-w-6xl">
+    <div>
       {/* Header */}
-      <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4 mb-10">
+      <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4 mb-6">
         <div>
-          <h1 className="text-3xl md:text-4xl font-display font-bold">
-            <span className="gradient-text">Visitor Analytics</span>
-          </h1>
-          <p className="text-sm text-muted-foreground mt-2 flex items-center gap-2">
+          <h2 className="text-2xl font-display font-bold text-foreground">Visitor Analytics</h2>
+          <p className="text-sm text-muted-foreground mt-1 flex items-center gap-2">
             <ShieldCheck size={14} className="text-emerald-400" />
-            {email} · this browser is excluded from the stats
+            This browser is excluded from the stats
           </p>
         </div>
         <div className="flex items-center gap-2">
           <Button variant="outline" size="sm" onClick={() => refetch()} disabled={isFetching}>
             <RefreshCw className={isFetching ? 'animate-spin' : ''} />
             Refresh
-          </Button>
-          <Button variant="outline" size="sm" onClick={onSignOut}>
-            <LogOut />
-            Sign out
           </Button>
         </div>
       </div>

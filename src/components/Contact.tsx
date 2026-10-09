@@ -2,33 +2,38 @@ import { motion } from 'framer-motion';
 import { useInView } from 'framer-motion';
 import { useRef } from 'react';
 import { useLanguage } from '@/contexts/LanguageContext';
+import { useContent } from '@/content/ContentContext';
 import { Mail, Phone, MapPin, Send } from 'lucide-react';
 
 const Contact = () => {
-  const { t } = useLanguage();
+  const { l } = useLanguage();
+  const { contact } = useContent();
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: "-100px" });
 
   const contactInfo = [
-    { 
-      icon: Mail, 
-      labelKey: 'contact.email', 
-      value: 'salahelden.abohashem@gmail.com',
-      href: 'mailto:salahelden.abohashem@gmail.com'
+    {
+      id: 'email',
+      icon: Mail,
+      label: l(contact.emailLabel),
+      value: contact.email,
+      href: contact.email ? `mailto:${contact.email}` : null,
     },
-    { 
-      icon: Phone, 
-      labelKey: 'contact.phone', 
-      value: '+90 531 606 0888',
-      href: 'tel:+905316060888'
+    {
+      id: 'phone',
+      icon: Phone,
+      label: l(contact.phoneLabel),
+      value: contact.phone,
+      href: contact.phone ? `tel:${contact.phone.replace(/[^\d+]/g, '')}` : null,
     },
-    { 
-      icon: MapPin, 
-      labelKey: 'contact.location', 
-      value: 'Sakarya, Turkey',
-      href: null
+    {
+      id: 'location',
+      icon: MapPin,
+      label: l(contact.locationLabel),
+      value: l(contact.location),
+      href: null,
     },
-  ];
+  ].filter((item) => item.value);
 
   return (
     <section id="contact" className="py-24 relative overflow-hidden" ref={ref}>
@@ -44,7 +49,7 @@ const Contact = () => {
             transition={{ delay: 0.2 }}
             className="text-3xl md:text-4xl font-display font-bold mb-4"
           >
-            <span className="gradient-text">{t('contact.title')}</span>
+            <span className="gradient-text">{l(contact.title)}</span>
           </motion.h2>
           <motion.p
             initial={{ opacity: 0, y: 20 }}
@@ -52,7 +57,7 @@ const Contact = () => {
             transition={{ delay: 0.3 }}
             className="text-muted-foreground text-lg"
           >
-            {t('contact.subtitle')}
+            {l(contact.subtitle)}
           </motion.p>
           <motion.div
             initial={{ width: 0 }}
@@ -67,7 +72,7 @@ const Contact = () => {
           <div className="grid md:grid-cols-3 gap-6 mb-12">
             {contactInfo.map((item, index) => (
               <motion.div
-                key={item.labelKey}
+                key={item.id}
                 initial={{ opacity: 0, y: 30 }}
                 animate={isInView ? { opacity: 1, y: 0 } : {}}
                 transition={{ delay: 0.3 + index * 0.1 }}
@@ -80,7 +85,7 @@ const Contact = () => {
                     <div className="p-4 rounded-full bg-primary/10 text-primary mb-4 group-hover:bg-primary/20 transition-colors">
                       <item.icon size={24} />
                     </div>
-                    <p className="text-muted-foreground text-sm mb-1">{t(item.labelKey)}</p>
+                    <p className="text-muted-foreground text-sm mb-1">{item.label}</p>
                     <p className="text-foreground font-medium group-hover:text-primary transition-colors">
                       {item.value}
                     </p>
@@ -90,7 +95,7 @@ const Contact = () => {
                     <div className="p-4 rounded-full bg-primary/10 text-primary mb-4 group-hover:bg-primary/20 transition-colors">
                       <item.icon size={24} />
                     </div>
-                    <p className="text-muted-foreground text-sm mb-1">{t(item.labelKey)}</p>
+                    <p className="text-muted-foreground text-sm mb-1">{item.label}</p>
                     <p className="text-foreground font-medium">{item.value}</p>
                   </div>
                 )}
@@ -106,13 +111,13 @@ const Contact = () => {
             className="text-center"
           >
             <motion.a
-              href="mailto:salahelden.abohashem@gmail.com"
+              href={`mailto:${contact.email}`}
               className="inline-flex items-center gap-3 px-8 py-4 bg-primary text-primary-foreground font-semibold rounded-lg glow-box hover:glow-box-lg transition-all duration-300"
               whileHover={{ scale: 1.05, y: -2 }}
               whileTap={{ scale: 0.98 }}
             >
               <Send size={20} />
-              {t('contact.cta')}
+              {l(contact.cta)}
             </motion.a>
           </motion.div>
         </div>

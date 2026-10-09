@@ -1,26 +1,25 @@
 import { lazy, Suspense, useEffect, useRef, useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useLanguage } from '@/contexts/LanguageContext';
-import { ArrowDown, Github, Linkedin, Mail, Sparkles, Code2, Rocket } from 'lucide-react';
+import { useContent } from '@/content/ContentContext';
+import { getIcon } from '@/content/icons';
+import { ArrowDown, Github, Linkedin, Mail } from 'lucide-react';
 
 // Lazy-load the heavy 3D scene so initial bundle stays small
 const Hero3DScene = lazy(() => import('./Hero3DScene'));
 
 const Hero = () => {
-  const { t } = useLanguage();
+  const { l } = useLanguage();
+  const { hero, general } = useContent();
   const sectionRef = useRef<HTMLElement>(null);
   const [mousePos, setMousePos] = useState({ x: 0, y: 0 });
   const [roleIndex, setRoleIndex] = useState(0);
 
-  const roles = [
-    t('hero.role.1'),
-    t('hero.role.2'),
-    t('hero.role.3'),
-    t('hero.role.4'),
-  ];
+  const roles = hero.roles.map((r) => l(r.text));
 
   // Cycle through roles
   useEffect(() => {
+    if (roles.length < 2) return;
     const id = setInterval(() => {
       setRoleIndex((i) => (i + 1) % roles.length);
     }, 2400);
@@ -47,20 +46,20 @@ const Hero = () => {
   };
 
   // Floating tech badges
-  const techBadges = [
-    { label: '.NET', x: '8%', y: '22%', delay: 0 },
-    { label: 'Kotlin', x: '85%', y: '18%', delay: 0.4 },
-    { label: 'Docker', x: '12%', y: '70%', delay: 0.8 },
-    { label: 'PostgreSQL', x: '88%', y: '72%', delay: 1.2 },
-    { label: 'Redis', x: '5%', y: '45%', delay: 1.6 },
-    { label: 'AWS', x: '92%', y: '45%', delay: 2.0 },
-  ];
+  const techBadges = hero.techBadges.map((b, i) => ({
+    id: b.id,
+    label: b.label,
+    x: `${b.x}%`,
+    y: `${b.y}%`,
+    delay: i * 0.4,
+  }));
 
-  const stats = [
-    { icon: Sparkles, value: '2+', labelKey: 'hero.stat.experience' },
-    { icon: Code2, value: '10+', labelKey: 'hero.stat.projects' },
-    { icon: Rocket, value: '∞', labelKey: 'hero.stat.stack' },
-  ];
+  const stats = hero.stats.map((s) => ({ id: s.id, icon: getIcon(s.icon), value: s.value, label: l(s.label) }));
+  const socials = [
+    { icon: Github, href: general.socials.github },
+    { icon: Linkedin, href: general.socials.linkedin },
+    { icon: Mail, href: general.socials.email && `mailto:${general.socials.email}` },
+  ].filter(({ href }) => href);
 
   return (
     <section
@@ -105,7 +104,7 @@ const Hero = () => {
       <div className="absolute inset-0 pointer-events-none hidden md:block">
         {techBadges.map((b) => (
           <motion.div
-            key={b.label}
+            key={b.id}
             className="absolute"
             style={{ left: b.x, top: b.y }}
             initial={{ opacity: 0, y: 10 }}
@@ -137,7 +136,7 @@ const Hero = () => {
               <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-500" />
             </span>
             <span className="text-xs font-medium text-foreground/90 tracking-wide">
-              {t('hero.status')}
+              {l(hero.status)}
             </span>
           </motion.div>
 
@@ -148,7 +147,7 @@ const Hero = () => {
             transition={{ delay: 0.2 }}
             className="text-primary font-medium mb-4 tracking-[0.3em] uppercase text-xs"
           >
-            {t('hero.greeting')}
+            {l(hero.greeting)}
           </motion.p>
 
           {/* Name with animated gradient + shimmer */}
@@ -159,7 +158,7 @@ const Hero = () => {
             className="text-5xl md:text-7xl lg:text-8xl font-display font-bold mb-6 relative"
           >
             <span className="bg-clip-text text-transparent bg-[linear-gradient(110deg,hsl(210_40%_98%),45%,hsl(187_100%_70%),55%,hsl(210_40%_98%))] bg-[length:200%_100%] animate-shimmer drop-shadow-[0_0_25px_hsl(187_100%_42%/0.35)]">
-              {t('hero.name')}
+              {l(hero.name)}
             </span>
           </motion.h1>
 
@@ -180,7 +179,7 @@ const Hero = () => {
                 transition={{ duration: 0.35 }}
                 className="text-2xl md:text-3xl font-display gradient-text glow-text"
               >
-                {roles[roleIndex]}
+                {roles[roleIndex % Math.max(roles.length, 1)]}
               </motion.span>
             </AnimatePresence>
             <span className="text-primary text-2xl md:text-3xl font-mono">{'/>'}</span>
@@ -193,7 +192,7 @@ const Hero = () => {
             transition={{ delay: 0.5 }}
             className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-10"
           >
-            {t('hero.subtitle')}
+            {l(hero.subtitle)}
           </motion.p>
 
           {/* CTA Buttons */}
@@ -209,7 +208,7 @@ const Hero = () => {
               whileHover={{ scale: 1.05, y: -2 }}
               whileTap={{ scale: 0.98 }}
             >
-              {t('hero.cta.projects')}
+              {l(hero.ctaProjects)}
             </motion.button>
             <motion.button
               onClick={scrollToContact}
@@ -217,7 +216,7 @@ const Hero = () => {
               whileHover={{ scale: 1.05, y: -2 }}
               whileTap={{ scale: 0.98 }}
             >
-              {t('hero.cta.contact')}
+              {l(hero.ctaContact)}
             </motion.button>
           </motion.div>
 
@@ -230,7 +229,7 @@ const Hero = () => {
           >
             {stats.map((s, i) => (
               <motion.div
-                key={s.labelKey}
+                key={s.id}
                 whileHover={{ y: -4, scale: 1.03 }}
                 className="glass-card rounded-xl p-3 md:p-4 hover:border-primary/40 transition-all duration-300"
               >
@@ -241,7 +240,7 @@ const Hero = () => {
                   </span>
                 </div>
                 <p className="text-[11px] md:text-xs text-muted-foreground uppercase tracking-wider">
-                  {t(s.labelKey)}
+                  {s.label}
                 </p>
               </motion.div>
             ))}
@@ -254,11 +253,7 @@ const Hero = () => {
             transition={{ delay: 0.9 }}
             className="flex justify-center gap-6"
           >
-            {[
-              { icon: Github, href: 'https://github.com/abohashem9639' },
-              { icon: Linkedin, href: 'https://www.linkedin.com/in/salahelden-abo-hashem' },
-              { icon: Mail, href: 'mailto:salahelden.abohashem@gmail.com' },
-            ].map(({ icon: Icon, href }, index) => (
+            {socials.map(({ icon: Icon, href }, index) => (
               <motion.a
                 key={index}
                 href={href}
